@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+}
+
+body{
+	background-color: black;
+	font-family: 'Courier New';
+}
+#cabeçalho{
+	padding-left: 20px;
+	padding-top: 20px;
+	font-size: 150%;
+}
+.my_background{
+	position: absolute;
+	background-image: url('Fundos/background.png');
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 200px;
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+ul{
+	font-size: 20px;
+
+}
+li{
+	padding-bottom: 5px;
+	margin-right: 0;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+
+
+#insta{
+	list-style-image: url('Fundos/insta.png');
+	
+}
+
+#tt{
+	list-style-image: url('Fundos/Twitter.png');
+	
+}
+
+#yt{
+	list-style-image: url('Fundos/Youtube.png');
+
+}

@@ -108,4 +108,6 @@ body{
     padding-top: 3px;
     padding-left: 3px;
     box-shadow: none;
+    transition: 0.3s;
+    
 }

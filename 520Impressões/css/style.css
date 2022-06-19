@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 1.35rem;
+    background-color: rgb(190, 190, 190);
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    text-transform: capitalize;
+    background-color: #112847;
+    background-color: rgb(4, 6, 5);
+    box-shadow: 1px 1px 11px 1px black;
+    box-sizing: border-box;
+}
+
+nav header{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav header .title{
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    padding: 1em 0px 0px 0px;
+    float: left;
+    color: rgba(225, 221, 221, 0.800);
+}
+
+nav header .title .content{
+    box-sizing: border-box;
+    height: 100%;
+    float: left;
+    width:7%;
+    margin-right: 3vh;
+}
+
+nav header .title .content img{
+    height: 60%;
+    width: auto;
+}
+
+nav header .title span{
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    padding-top: 0.2em;
+}
+
+nav header .social-media{
+    float: right;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+nav header .social-media a{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 99.5%;
+    padding: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    color: rgba(225, 221, 221, 0.800);
+}
+
+/*nav header .social-media a:hover{
+    background-color: rgb(190, 190, 190);
+    color:rgb(4, 6, 5);
+    border-radius: 100%;
+    transition: 0.3s;
+}*/
+
+nav header .social-media a:hover{
+    color:#00bac6;
+    border-bottom: 3px solid #00bac6;
+    transition: 0.3s;
+}
+
+nav header .social-media a li{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    padding: 0;
+    height: 100%;
+}
+
+main{
+    padding-top: 10vh;
+    height: 90vh;
+    width: 100vw;
+}
+
+main .logo{
+    height: 280px;
+    width: 280px;
+    margin: 0 auto;
+}
+
+main .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 6px 6px 20px 0px black;
+}
+
+main .logo img:active{
+    transform: translate(6px, 6px);
+    box-shadow: 1px 0px 10px 0px black;
+    transition: 0.3s;
+}
+
+main h1{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.4rem;
+    margin: 0;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: rgb(4, 6, 5);    
+}
+
+main h2{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3.5rem;
+    margin: 0;
+    margin-top: 10vh;
+    margin-bottom: 0vh;
+    text-align: center;
+    color: rgb(4, 6, 5);    
+}
+
+main .services{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+}
+
+main .services .container{
+    display: inline-block;
+    height: 100%;
+    width: 90%;
+    margin: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 10vh;
+}
+
+main .services .container ul{
+    margin: auto;
+    display: inline-block;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    padding-left: 60px;
+}
+
+main .services .container ul li{
+    display: inline-block;
+    margin-right: 60px;
+    height: 90%;
+    margin-top: 10vh;
+    width: 200px;
+    border-radius: 24px 0px 24px 0px;
+    background-color: rgba(251, 253, 253, 0.855);
+    box-shadow: 6px 6px 20px 0px black;
+    
+}
+
+main .services .container ul li:hover{
+    margin-top: 0;
+    height: 100%;
+    width: 220px;
+    margin-right: 40px;
+    box-shadow: 12px 12px 50px 0px black;
+    transition: 0.3s;
+}
+
+
+main .services .container ul li .pic{
+    height: 70%;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+main .services .container ul li .pic img{
+    height: 100%;
+    width: 100%;
+    border-radius: 24px 0px 0px 0px;
+}
+
+main .services .container ul li .text{
+    margin-top: -5px;
+    width: 100%;
+    height: 11%;
+}
+
+main .services .container ul li .text span{
+    box-sizing: border-box;
+    padding: 1%;
+    padding-right: 2%;
+    background-color: #ffbf00;
+    color: aliceblue;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+    float: left;
+}
+
+
+

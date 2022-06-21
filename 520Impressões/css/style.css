@@ -10,8 +10,7 @@ nav{
     height: 100px;
     text-transform: capitalize;
     background-color: #112847;
-    background-color: rgb(4, 6, 5);
-    box-shadow: 1px 1px 11px 1px black;
+    background-color: rgb(4, 6, 5); 
     box-sizing: border-box;
 }
 
@@ -82,9 +81,10 @@ nav header .social-media a{
 }*/
 
 nav header .social-media a:hover{
+    box-sizing: border-box;
     color:#00bac6;
-    border-bottom: 3px solid #00bac6;
-    transition: 0.3s;
+    border-bottom: 4px solid #00bac6;
+    transition: 0.5s;
 }
 
 nav header .social-media a li{
@@ -96,9 +96,14 @@ nav header .social-media a li{
 }
 
 main{
-    padding-top: 10vh;
-    height: 90vh;
+    padding-top: 40vh;
+    height: 60vh;
     width: 100vw;
+    background-image: url(../imagens/fundo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 10px ridge #fff;
 }
 
 main .logo{
@@ -122,12 +127,19 @@ main .logo img:active{
 
 main h1{
     font-family: 'Shadows Into Light', cursive;
-    font-size: 2.4rem;
+    font-size: 3.5rem;
+    font-weight: bold;
     margin: 0;
-    margin-top: 10vh;
+    margin-top: 3.5vh;
     margin-bottom: 5vh;
     text-align: center;
-    color: rgb(4, 6, 5);    
+    color: rgb(4, 6, 5);
+}
+
+main h1 span{
+    color: rgb(240, 240, 240);
+    font-size: 3.3rem;
+    font-weight: normal;
 }
 
 main h2{

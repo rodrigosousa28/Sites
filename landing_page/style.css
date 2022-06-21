@@ -81,9 +81,10 @@ nav header .social-media a{
 }*/
 
 nav header .social-media a:hover{
+    box-sizing: border-box;
     color:#00bac6;
-    border-bottom: 5px solid #00bac6;
-    transition: 0.3s;
+    border-bottom: 4px solid #00bac6;
+    transition: 0.5s;
 }
 
 nav header .social-media a li{

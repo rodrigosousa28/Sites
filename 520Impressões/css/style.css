@@ -126,6 +126,7 @@ section.first_background h1 span{
     margin: 15px;
     background-color: #00bac6;
     border-radius: 24px 4px 24px 4px;
+    box-shadow: 1px 1px 11px 1px black;
 }
 
 .flex-container .pic img{

@@ -1,256 +1,147 @@
-body{
+*{
+    box-sizing: border-box;
     margin: 0;
-    overflow-x: hidden;
-    font-size: 1.35rem;
-    background-color: rgb(91, 91, 91);
 }
 
 nav{
-    width: 100%;
     height: 100px;
-    text-transform: capitalize;
-    background-color: rgb(4, 6, 5); 
-    box-sizing: border-box;
-    box-shadow: 1px 1px 11px black;
+    width: 100%;
+    background-color: rgb(4, 6, 5);
+    box-shadow: 1px 1px 11px 1px black;
     position: fixed;
 }
 
 nav header{
-    width: 80%;
     height: 100%;
+    width: 1280px;
     margin: 0 auto;
 }
 
 nav header .title{
-    box-sizing: border-box;
-    text-transform: capitalize;
-    font-size: 1.5rem;
-    box-sizing: border-box;
-    height: 100%;
-    width: 50%;
-    padding: 1em 0px 0px 0px;
     float: left;
-    color: rgba(225, 221, 221, 0.800);
+    height: 100px;
 }
 
 nav header .title .content{
-    box-sizing: border-box;
+    color: aliceblue;
+    font-size: 24px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding-top: 20px;
     height: 100%;
-    float: left;
-    width:7%;
-    margin-right: 3vh;
+    float: right;
 }
 
 nav header .title .content img{
-    height: 60%;
-    width: auto;
+    height: 70%;
 }
 
-nav header .title span{
-    font-family: 'Shadows Into Light', cursive;
-    font-weight: bold;
-    box-sizing: border-box;
-    display: inline-block;
-    height: 100%;
-    padding-top: 0.2em;
-}
-
-nav header .social-media{
+nav header .title .content span{
     float: right;
-    width: 50%;
-    height: 100%;
-    margin: 0;
-    list-style: none;
+    line-height: 56px;
+    padding-left: 20px;
+}
+
+nav header ul{
+    float: right;
+    margin: auto;
+    line-height: 100px;
     padding: 0;
 }
 
-nav header .social-media a{
+nav header ul a{
     box-sizing: border-box;
     display: inline-block;
-    height: 99.5%;
-    padding: 1.5em;
-    text-decoration: none;
-    text-align: center;
-    color: rgba(225, 221, 221, 0.800);
+    height: 100px;
+    padding: 0px 18px;
+    margin: 0px 2px;
+    text-transform: capitalize;
+    color: aliceblue;
+    font-size: 20px;
 }
 
-/*nav header .social-media a:hover{
-    background-color: rgb(190, 190, 190);
-    color:rgb(4, 6, 5);
-    border-radius: 100%;
-    transition: 0.3s;
-}*/
-
-nav header .social-media a:hover{
-    box-sizing: border-box;
-    color:#00bac6;
-    border-bottom: 3px solid #00bac6;
-    transition: 0.3s;
-}
-
-nav header .social-media a li{
-    box-sizing: border-box;
+nav header ul a li{
     display: inline-block;
-    height: 100%;
-    padding: 0;
-    height: 100%;
 }
 
-main{
-    padding-top: 40vh;
-    height: 60vh;
-    width: 100vw;
-    background-image: url(../imagens/fundo3.jpg);
-    background-repeat: no-repeat;
+nav header ul a:hover{
+    color: #00bac6;
+    border-bottom: 3.5px solid #00bac6;
+    
+}
+
+section.first_background{
+    box-sizing: content-box;
+    box-shadow: 1px 1px 11px 1px black;
+    padding-top: 100px;
+    height: 660px;
+    background-image: url(../images/fundo3.jpg);
     background-size: cover;
+    background-position-y: calc(20%);
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-main .logo{
-    height: 280px;
-    width: 280px;
+section.first_background .logo{
+    padding-top:180px;
+    width: 980px;
     margin: 0 auto;
+    text-align: center;
 }
 
-main .logo img{
-    width: 100%;
-    height: 100%;
+section.first_background .logo img{
     border-radius: 50%;
-    box-shadow: 6px 6px 20px 0px black;
+    box-shadow: 1px 1px 11px 1px black;
 }
 
-main .logo img:active{
-    transform: translate(6px, 6px);
-    box-shadow: 1px 0px 10px 0px black;
-    transition: 0.3s;
-}
-
-main h1{
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 0;
-    margin-top: 3.5vh;
-    text-align: center;
-    color: rgb(4, 6, 5);
-}
-
-main h1 span{
-    color: rgb(240, 240, 240);
-    font-size: 3.3rem;
-    font-weight: normal;
-    font-size: 4.5rem;
-    text-transform: capitalize;
-}
-
-main h2{
-    font-family: 'Shadows Into Light', cursive;
+section.first_background h1{
+    width: 100%;
     font-size: 3.5rem;
-    margin: 0;
-    margin-top: 5vh;
-    margin-bottom: 0vh;
-    text-align: center;
-    color: rgb(4, 6, 5);
-}
-
-main .services{
-    display: inline-block;
-    width: 100%;
-    font-family: 'Shadows Into Light', cursive;
-    color: #fff;
     font-weight: bold;
-    height: 600px;
-    background-color: rgb(240, 240, 240);
-    border-top: 3px solid black;
-    border-bottom: 1.5px solid black;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Shadows Into Light', cursive;
 }
 
-main .services .container{
-    display: inline-block;
+section.first_background h1 span{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 3.8rem;
+}
+
+.flex-container{
+    padding-top: 40px;
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container .pic{
     height: 300px;
-    width: 90%;
-    margin: 5%;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-bottom: 10vh;
+    width: 180px;
+    margin: 15px;
+    background-color: #00bac6;
+    border-radius: 24px 4px 24px 4px;
+    box-shadow: 1px 1px 11px 1px black;
 }
 
-main .services .container ul{
-    margin: auto;
-    display: inline-block;
-    list-style: none;
-    height: 100%;
+.flex-container .pic img{
+    height: 68%;
     width: 100%;
-    padding: 0;
-    margin: 0;
-    bottom: 0;
-    padding-left: 60px;
-}
-
-main .services .container ul li{
-    display: inline-block;
-    margin-right: 60px;
-    height: 90%;
-    margin-top: 10vh;
-    width: 200px;
-    border-radius: 24px 0px 24px 0px;
-    background-color: rgba(251, 253, 253, 0.855);
-    box-shadow: 6px 6px 20px 0px black;
-    
-}
-
-main .services .container ul li p{
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 0px;
-    padding-bottom: 4px;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-style: oblique;
-    background-color: #5b8d91;
-}
-
-main .services .container ul li:hover{
-    margin-top: 0;
-    height: 100%;
-    width: 220px;
-    margin-right: 40px;
-    box-shadow: 12px 12px 50px 0px black;
-    transition: 0.1s;
-    font-size: 27px;
-}
-
-
-main .services .container ul li .pic{
-    height: 70%;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-}
-
-main .services .container ul li .pic img{
-    height: 100%;
-    width: 100%;
-    border-radius: 24px 0px 0px 0px;
-}
-
-main .services .container ul li .text{
-    margin-top: -5px;
-    width: 100%;
-    height: 11%;
+    border-radius: 24px 4px 0px 0px;
 }
 
 footer{
-    display: block;
     width: 100%;
-    
+    height: 300px;
+    background-color: gray;
+    border-top: 2px solid #00bac6;
 }
 
 footer iframe{
     float: right;
-    z-index: 1;
 }
-

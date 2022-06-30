@@ -113,17 +113,17 @@ section.first_background h1 span{
 .our-services{
     width: 100%;
     text-align: center;
-    margin-top: 45px;
-    margin-bottom: 25px;
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
-.our-services h2{
+.our-services span{
     font-family: 'Shadows Into Light', cursive;
     text-transform: capitalize;
     font-size: 3.5rem;
     font-weight: bolder;
     width: 450px;
-    padding: 50px 0;
+    padding: 60px;
     padding-top: 28px;
     margin: 0 auto;
     line-height: 3.5rem;
@@ -132,6 +132,7 @@ section.first_background h1 span{
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+    transform: translateX(-8%);
 }
 
 .flex-container{

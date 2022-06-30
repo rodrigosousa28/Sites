@@ -144,12 +144,19 @@ section.first_background h1 span{
 }
 
 .flex-container .pic{
-    height: 300px;
-    width: 200px;
-    margin: 15px;
+    height: 270px;
+    width: 180px;
+    margin: 25px;
+    margin-left: 50px;
+    margin-right: 0;
     background-color: rgb(252, 247, 194);
     border-radius: 24px 4px 24px 4px;
-    box-shadow: 1px 1px 11px 1px black;
+    box-shadow: 3px 4px 11px 1px black;
+}
+
+.flex-container .pic p{
+    font-size: 1.3rem;
+
 }
 
 .flex-container .pic img{

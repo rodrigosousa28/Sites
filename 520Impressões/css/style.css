@@ -214,6 +214,7 @@ footer iframe{
     box-shadow: 1px 1px 11px #21422e;
     text-transform: uppercase;
     border-radius: 10px;
+    transition: 0.6s;
 }
 
 .whatsapp:hover{

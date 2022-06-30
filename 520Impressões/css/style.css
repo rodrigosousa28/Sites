@@ -58,7 +58,7 @@ nav header ul a{
     margin: 0px 2px;
     text-transform: capitalize;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 nav header ul a li{
@@ -66,8 +66,8 @@ nav header ul a li{
 }
 
 nav header ul a:hover{
-    color: #00bac6;
-    border-bottom: 3.5px solid #00bac6;
+    color: #25d366;
+    border-bottom: 3.5px solid #25d366;
     transition: 0.3s;
 }
 

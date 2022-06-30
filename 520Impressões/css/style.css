@@ -216,6 +216,12 @@ footer iframe{
     border-radius: 10px;
 }
 
+.whatsapp:hover{
+    background-color: #21422e;
+    border: 1px #25d366 solid;
+    transition: 0.6s;
+}
+
 .whatsapp span.call{
     float: right;
     line-height: 28px;

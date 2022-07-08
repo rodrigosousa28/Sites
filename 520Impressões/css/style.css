@@ -151,6 +151,7 @@ section.first_background h1 span{
     background-repeat: no-repeat;
     background-position: calc(98%);
     background-size: 15%;
+    border: 1.6px solid black;
 } 
 
 .container .our-services .search input::placeholder{

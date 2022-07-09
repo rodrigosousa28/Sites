@@ -185,7 +185,6 @@ section.first_background h1 span{
 
 .flex-container .pic p{
     padding: 6px;
-    transform: translateY(-15%);
 }
 
 .flex-container .pic h1.card_content{
@@ -195,6 +194,7 @@ section.first_background h1 span{
     transform: translateY(-45%);
     letter-spacing: 0.4px;
     font-style: italic;
+    color: rgb(44, 46, 45);
 }
 
 .flex-container .pic p.promotion{
@@ -230,6 +230,8 @@ section.first_background h1 span{
 .flex-container .pic p.subtitle{
     z-index: -1;
     font-style: italic;
+    color: rgb(30, 31, 31);
+    transform: translateY(-5%);
 }
 
 

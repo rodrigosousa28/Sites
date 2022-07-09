@@ -171,12 +171,13 @@ section.first_background h1 span{
 
 .flex-container .pic{
     font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
     height: 280px;
     width: 200px;
     max-width: 200px;
     max-height: 280px;
     margin: 40px;
-    background-color: rgb(255, 253, 237);
+    background-color: rgb(254, 250, 220);
     box-shadow: 4.5px 4px 11px 1px gray;
     border-radius: 8px;
 }
@@ -184,18 +185,43 @@ section.first_background h1 span{
 
 .flex-container .pic p{
     padding: 6px;
+    transform: translateY(-15%);
+}
+
+.flex-container .pic h1.card_content{
+    font-size: 1.22rem;
+    margin-left: 6px;
+    font-weight: 650;
+    transform: translateY(-45%);
+    letter-spacing: 0.6px;
 }
 
 .flex-container .pic p.promotion{
     background-color: #F19839;
+    float: right;
+    width: 82%;
+    transform: translateY(-475%);
+    border-radius: 8px 0px 0px 8px;
+    color: #fff;
+    font-weight: 600;
+    text-align: right;
+    word-spacing: 2px;
+    z-index: -1;
+    text-transform: capitalize;
+}
+
+.flex-container .pic p.price{
+    background-color: #1D61DD;
     display: inline-block;
-    width: 50%;
+    width: 55%;
     transform: translateY(-70%);
     border-radius: 0px 8px 8px 0px;
     color: #fff;
     font-weight: bold;
+    word-spacing: 2px;
     z-index: -1;
 }
+
 
 .flex-container .pic:hover{
     height: 320px;

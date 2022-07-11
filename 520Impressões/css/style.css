@@ -252,45 +252,82 @@ section.first_background h1 span{
 }
 
 footer{
-    width: 100%;
-    height: 300px;
-    background-color: rgb(233, 229, 198);
-    
+    background-color: rgb(4, 6, 5);
+    height: auto;
+    width: 100vw;
+    padding-top: 20px;
+    color: #fff;
+    box-shadow: 1px 1px 11px 1px rgb(63, 60, 60);
+    font-family: 'Shadows Into Light', cursive;
 }
 
-footer ul.social-media{
-    padding: 0;
-    padding-top: 80px;
-    margin: auto;
-    margin-left: 10px;
-    height: 100%;
-    float: left;
+footer .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-footer ul.social-media li{
-    height: 20%;
-    margin-bottom: 20px;
+footer .footer-content h3{
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-bottom: 10px;
 }
 
-footer ul.social-media li a span{
-    display: block;
-    float: right;
-    padding: 11px;
-    padding-right: 21px;
+footer .footer-content p{
+    max-width: 500px;
+    margin: 15px auto;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+footer .footer-content .social{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+    padding-inline-start: 20px;
+}
+
+footer .footer-content .social li{
+    margin: 0 11px;
+}
+
+footer .footer-content .social li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-content .social li a i{
     font-size: 1.5rem;
-    color: rgb(4, 6, 5);
+    transition: 0.3s;
+}
+footer .footer-content .social li a:hover i{
+    color: #25d366;
+    transition: 0.3s;
 }
 
-footer ul.social-media li a{
-    height: 100%;
+footer .footer-bottom{
+    background-color: #000;
+    font-family: 'Open Sans';
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
 }
 
-footer ul.social-media li a img{
-    height: 100%;
+footer .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 3px;
+    text-transform: capitalize;
 }
 
-footer iframe{
-    float: right;
+footer .footer-bottom span{
+    text-transform: uppercase;
+    opacity: 0.4;
 }
 
 .whatsapp{

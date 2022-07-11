@@ -4,7 +4,7 @@
 }
 
 body{
-    overflow-x: hidden;
+    background-color: #fcfcfc;
 }
 
 nav{
@@ -18,12 +18,13 @@ nav{
 
 nav header{
     height: 100%;
-    width: 1200px;
+    width: 80vw;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav header .title{
-    float: left;
     height: 90px;
 }
 
@@ -48,14 +49,21 @@ nav header .title .content span{
     padding-left: 20px;
 }
 
-nav header ul{
+nav header .midias{
     float: right;
-    margin: auto;
-    line-height: 90px;
+    width: 70%;
+    height: 90px;
     padding: 0;
 }
 
-nav header ul a{
+nav header .midias ul{
+    margin: auto;
+    float: right;
+    padding: 0;
+    line-height: 90px;
+}
+
+nav header .midias ul a{
     box-sizing: border-box;
     display: inline-block;
     height: 90px;
@@ -66,15 +74,25 @@ nav header ul a{
     font-size: 1.2rem;
 }
 
-nav header ul a li{
+nav header .midias ul a li{
     display: inline-block;
 }
 
-nav header ul a:hover{
+nav header .midias ul a:hover{
     color: #25d366;
     border-bottom: 3.5px solid #25d366;
     transition: 0.3s;
 }
+
+/*Responsive menu*/
+nav header .mobile-menu-icon{
+    display: none;
+}
+
+nav .mobile-menu{
+    display: none;
+}
+/*Responsive menu*/
 
 section.first_background{
     box-sizing: border-box;
@@ -91,7 +109,7 @@ section.first_background{
 
 section.first_background .logo{
     padding-top: 100px;
-    width: 980px;
+    width: auto;
     height: 300px;
     margin: 0 auto;
     text-align: center;
@@ -290,7 +308,7 @@ footer .footer-content .social{
     align-items: center;
     justify-content: center;
     margin: 2rem 0 2rem 0;
-    padding-inline-start: 20px;
+    padding-inline-start: 0;
 }
 
 footer .footer-content .social li{
@@ -362,4 +380,25 @@ footer .footer-bottom span{
 
 .whatsapp img{
     height: 25px;
+}
+
+@media screen and (max-width: 880px){
+    nav header .midias{
+        display: none;
+    }
+    nav header .mobile-menu-icon{
+        display: block;
+        line-height: 90px;
+        float: right;
+        padding-right: 50px;
+    }
+    nav header .mobile-menu-icon buttom{
+        display: block;
+        box-sizing: border-box;
+        line-height: 65px;
+        padding-top: 25px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
 }

@@ -396,6 +396,7 @@ footer .footer-bottom span{
         line-height: 90px;
         float: right;
     }
+
     nav header .mobile-menu-icon buttom{
         display: block;
         box-sizing: border-box;
@@ -404,5 +405,31 @@ footer .footer-bottom span{
         background-color: transparent;
         border: none;
         cursor: pointer;
+    }
+
+    nav .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    nav .mobile-menu ul a{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    nav .mobile-menu ul a li{
+        display: inline-block
+    }
+
+    .open{
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        background-color: rgb(4, 6, 5);
     }
 }

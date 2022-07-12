@@ -5,6 +5,7 @@
 
 body{
     background-color: #fcfcfc;
+    overflow-x: hidden;
 }
 
 nav{
@@ -50,28 +51,32 @@ nav header .title .content span{
 }
 
 nav header .midias{
+    display: flex;
+    align-items: center;
     float: right;
-    width: 70%;
+    width: 50%;
     height: 90px;
-    padding: 0;
 }
 
 nav header .midias ul{
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
     float: right;
     padding: 0;
-    line-height: 90px;
 }
 
 nav header .midias ul a{
-    box-sizing: border-box;
-    display: inline-block;
-    height: 90px;
-    padding: 0px 18px;
-    margin: 0px 2px;
-    text-transform: capitalize;
-    color: aliceblue;
+    box-sizing: content-box;
     font-size: 1.2rem;
+    display: flex;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    height: 98%;
+    padding: 0px 20px;
+    align-items: center;
 }
 
 nav header .midias ul a li{
@@ -390,7 +395,6 @@ footer .footer-bottom span{
         display: block;
         line-height: 90px;
         float: right;
-        padding-right: 50px;
     }
     nav header .mobile-menu-icon buttom{
         display: block;

@@ -49,6 +49,7 @@ nav header .title .content span{
     float: right;
     line-height: 56px;
     padding-left: 20px;
+    transform: translateY(-10%);
 }
 
 nav header .midias{
@@ -81,8 +82,8 @@ nav header .midias ul a li{
 }
 
 nav header .midias ul a:hover{
-    color: #25d366;
-    border-bottom: 3.5px solid #25d366;
+    color: #b59225;
+    border-bottom: 3.5px solid #b59225;
     transition: 0.3s;
 }
 
@@ -139,12 +140,12 @@ section.first_background .titulo{
 section.first_background .titulo h1{
     width: 60vw;
     margin: 0 auto;
-    font-size: 9vh;
+    font-size: 10vh;
     font-weight: bold;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
     color: #fff;
-    text-shadow:  1px 3px rgb(109, 181, 20);
+    text-shadow: 2px 4px #b59225;
 }
 
 section.first_background h1 span{
@@ -152,7 +153,6 @@ section.first_background h1 span{
     font-weight: bolder;
     color: rgb(31, 31, 31);
     text-transform: capitalize;
-    text-shadow:  1px 2px rgb(109, 181, 20);
 }   
 
 .container{
@@ -554,7 +554,7 @@ footer .footer-bottom span{
     }
 
     nav .mobile-menu ul a:hover{
-        background-color: #25d366;
+        background-color: #b59225;
         border-radius: 8px;
     }
 

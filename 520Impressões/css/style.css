@@ -182,7 +182,7 @@ section.first_background h1 span{
 
 .container .our-services .search input{
     height: 30px;
-    padding: 1.5vh 1vw;
+    padding: 2vh 0vw 2vh 0.5vw;
     background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     background-position: calc(98%);

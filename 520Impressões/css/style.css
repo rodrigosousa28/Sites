@@ -198,10 +198,11 @@ section.first_background h1 span{
     display: flex;
     width: 100vw;
     height: auto;
-    padding: 40px 0px 100px 0px;
+    padding: 40px 0px 40px 0px;
+    border-bottom: 1px solid #7c7b7b;
 }
 
-.flex-container{
+.bigger .flex-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -209,7 +210,7 @@ section.first_background h1 span{
     margin: 0 auto;
 }
 
-.flex-container .pic{
+.bigger .flex-container .pic{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     height: 280px;
@@ -224,11 +225,11 @@ section.first_background h1 span{
 }
 
 
-.flex-container .pic p{
+.bigger .flex-container .pic p{
     padding: 6px;
 }
 
-.flex-container .pic h1.card_content{
+.bigger .flex-container .pic h1.card_content{
     font-size: 1.24rem;
     margin-left: 6px;
     font-weight: 650;
@@ -238,7 +239,7 @@ section.first_background h1 span{
     color: rgb(44, 46, 45);
 }
 
-.flex-container .pic p.promotion{
+.bigger .flex-container .pic p.promotion{
     background-color: #F19839;
     float: right;
     width: 52%;
@@ -253,7 +254,7 @@ section.first_background h1 span{
     font-style: italic;
 }
 
-.flex-container .pic p.price{
+.bigger .flex-container .pic p.price{
     box-sizing: content-box;
     background-color: #1D61DD;
     display: inline-block;
@@ -268,7 +269,7 @@ section.first_background h1 span{
     font-style: italic;
 }
 
-.flex-container .pic p.subtitle{
+.bigger .flex-container .pic p.subtitle{
     z-index: -1;
     font-style: italic;
     color: rgb(30, 31, 31);
@@ -276,7 +277,7 @@ section.first_background h1 span{
 }
 
 
-.flex-container .pic:hover{
+.bigger .flex-container .pic:hover{
     height: 320px;
     width: 240px;
     max-width: 240px;
@@ -286,12 +287,94 @@ section.first_background h1 span{
     font-size: 22px;
 }
 
-
-
-.flex-container .pic img{
+.bigger .flex-container .pic img{
     height: 60%;
     width: 100%;
     border-radius: 8px 8px 0px 0px;
+}
+
+h1.titulocont{
+    width: 100vw;
+    text-align: center;
+    padding: 40px 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 6.5vh;
+    font-weight: 500;
+}
+
+.caixa{
+    width: 100vw;
+}
+
+.biggerc{
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    width: 80vw;
+    height: auto;
+    justify-content: space-between;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.biggerc .contato{
+    width: 30vw;
+    text-align: center;
+}
+
+.biggerc .contato p{
+    text-align: justify;
+    padding: 10px 10px 20px 0px;
+}
+
+.biggerc .contato h2{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 4.2vh;
+    font-weight: 500;
+}
+
+.biggerc .contato .formulario{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 600px;
+}
+
+.biggerc .contato .usertext{
+    float: right;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(4, 6, 5);
+    cursor: pointer;
+}
+
+.biggerc .local{
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+
+}
+
+.border{
+    padding: 10px;
+    border: 1px solid #7c7b7b;
+}
+
+.biggerc .local h2{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 4.2vh;
+    font-weight: 500;
+}
+
+.biggerc .local p{
+    text-align: justify;
+    padding: 10px 10px 30px 0;
 }
 
 footer{

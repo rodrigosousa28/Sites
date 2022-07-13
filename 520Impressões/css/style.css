@@ -302,6 +302,7 @@ h1.titulocont{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 6.5vh;
     font-weight: 500;
+    text-shadow: 1px 1px gray;
 }
 
 .caixa{
@@ -325,7 +326,8 @@ h1.titulocont{
     padding: 20px 25px;
     text-align: center;
     border-radius: 24px;
-    background-color: rgb(254, 250, 220);
+    background-color: rgb(255, 248, 194);
+    box-shadow: inset -1px -1px 20px 0px #b59225;
 }
 
 .biggerc .contato p{
@@ -339,6 +341,7 @@ h1.titulocont{
     padding: 10px;
     font-size: 4.2vh;
     font-weight: 500;
+    text-shadow: 1px 1px gray;
 }
 
 .biggerc .contato .formulario{
@@ -374,7 +377,8 @@ h1.titulocont{
     padding: 20px 25px;
     border-radius: 24px;
     flex-direction: column;
-    background-color: rgb(254, 250, 220); 
+    background-color: rgb(255, 248, 194);
+    box-shadow: inset -1px -1px 20px 0px #b59225;
 }
 
 .border{
@@ -389,6 +393,7 @@ h1.titulocont{
     padding-bottom: 20px;
     font-size: 4.2vh;
     font-weight: 500;
+    text-shadow: 1px 1px gray;
 }
 
 .biggerc .local p{

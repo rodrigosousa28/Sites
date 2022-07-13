@@ -574,25 +574,23 @@ footer .footer-bottom span{
 
     .biggerc .contato{
         margin-bottom: 50px;
-        width: 90%;
+        width: 100%;
     }
+
     .biggerc .local{
         margin-bottom: 50px;
-        width: 90%;
+        width: 100%;
+    }
+
+    .biggerc .contato h2{
+        margin-bottom: 10px;
+        padding: 0;
     }
 }
 
 @media screen and (max-width: 700px) {
     .flex-container{
         width: 100vw;
-    }
-    .biggerc .contato{
-        margin-bottom: 50px;
-        width: 90%;
-    }
-    .biggerc .local{
-        margin-bottom: 50px;
-        width: 90%;
     }
 }
 

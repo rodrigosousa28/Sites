@@ -51,10 +51,6 @@ nav header .title .content span{
 }
 
 nav header .midias{
-    display: flex;
-    align-items: center;
-    float: right;
-    width: 50%;
     height: 90px;
 }
 

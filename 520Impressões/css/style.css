@@ -220,8 +220,8 @@ section.first_background h1 span{
     max-width: 200px;
     max-height: 280px;
     margin: 40px;
-    background-color: rgb(255 252 229);
-    box-shadow: 4.5px 4px 11px 1px gray;
+    background-color: rgb(255, 248, 194);
+    box-shadow: inset -1px -1px 20px 0px #b59225;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -285,7 +285,6 @@ section.first_background h1 span{
     max-width: 240px;
     max-height: 320px;
     margin: 20px;
-    box-shadow: 9px 8px 20px 1px gray;
     font-size: 22px;
 }
 

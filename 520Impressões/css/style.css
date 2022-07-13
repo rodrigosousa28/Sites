@@ -148,22 +148,15 @@ section.first_background h1 span{
 }
 
 .container .our-services{
-    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
     line-height: 80px;
     margin: 0 auto;
-    text-align: center;
     font-size: 32px;
     font-weight: bolder;
     font-family: 'Shadows Into Light', cursive;
     text-transform: capitalize;
-}
-
-.container .our-services span{
-    float: left;
-}
-
-.container .our-services .search{
-    float: right;
 }
 
 .container .our-services .search input{
@@ -410,17 +403,25 @@ footer .footer-bottom span{
 
     nav .mobile-menu ul{
         display: flex;
+        width: 80vw;
         flex-direction: column;
         text-align: center;
         padding: 0;
+        padding-bottom: 0.8rem;
     }
     nav .mobile-menu ul a{
         display: flex;
         flex-direction: column;
-        padding: 15px 0;
+        padding: 20px 40px;
         text-decoration: none;
         text-transform: capitalize;
         color: #fff;
+        transition: 0.3s;
+    }
+
+    nav .mobile-menu ul a:hover{
+        background-color: #25d366;
+        border-radius: 8px;
     }
 
     nav .mobile-menu ul a li{
@@ -428,7 +429,7 @@ footer .footer-bottom span{
     }
 
     .open{
-        display: flex;
+        display: flex !important;
         width: 100vw;
         justify-content: center;
         background-color: rgb(4, 6, 5);

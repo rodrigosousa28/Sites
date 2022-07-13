@@ -322,8 +322,11 @@ h1.titulocont{
 }
 
 .biggerc .contato{
-    width: 35%;
+    width: 40%;
+    padding: 20px 25px;
     text-align: center;
+    border-radius: 24px;
+    background-color: rgb(254, 250, 220);
 }
 
 .biggerc .contato p{
@@ -358,13 +361,21 @@ h1.titulocont{
     border-radius: 10px;
     border: 1px solid rgb(4, 6, 5);
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.biggerc .contato .usertext:hover{
+    background-color: #7c7b7b;
+    color: #fcfcfc;
 }
 
 .biggerc .local{
     display: flex;
-    width: 35%;
+    width: 40%;
+    padding: 20px 25px;
+    border-radius: 24px;
     flex-direction: column;
-
+    background-color: rgb(254, 250, 220); 
 }
 
 .border{

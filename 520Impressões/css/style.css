@@ -139,7 +139,7 @@ section.first_background .titulo{
 section.first_background .titulo h1{
     width: 60vw;
     margin: 0 auto;
-    font-size: 8vh;
+    font-size: 9vh;
     font-weight: bold;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
@@ -148,7 +148,7 @@ section.first_background .titulo h1{
 }
 
 section.first_background h1 span{
-    font-size: 9vh;
+    font-size: 10vh;
     font-weight: bolder;
     color: rgb(31, 31, 31);
     text-transform: capitalize;
@@ -573,13 +573,26 @@ footer .footer-bottom span{
     }
 
     .biggerc .contato{
-        padding-bottom: 50px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+    .biggerc .local{
+        margin-bottom: 50px;
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 700px) {
     .flex-container{
         width: 100vw;
+    }
+    .biggerc .contato{
+        margin-bottom: 50px;
+        width: 90%;
+    }
+    .biggerc .local{
+        margin-bottom: 50px;
+        width: 90%;
     }
 }
 

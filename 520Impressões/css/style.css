@@ -75,6 +75,7 @@ nav header .midias ul a{
     height: 98%;
     padding: 0px 20px;
     align-items: center;
+    transition: 0.2s;
 }
 
 nav header .midias ul a li{
@@ -84,7 +85,6 @@ nav header .midias ul a li{
 nav header .midias ul a:hover{
     color: #b59225;
     border-bottom: 3.5px solid #b59225;
-    transition: 0.3s;
 }
 
 /*Responsive menu*/
@@ -233,6 +233,7 @@ section.first_background h1 span{
     box-shadow: inset -1px -1px 20px 0px #b59225;
     border-radius: 7px;
     cursor: pointer;
+    transition: 0.15s;
 }
 
 
@@ -502,7 +503,7 @@ footer .footer-bottom span{
     box-shadow: 1px 1px 11px #21422e;
     text-transform: uppercase;
     border-radius: 10px;
-    transition: 0.4s;
+    transition: 0.25s;
     z-index: 1;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -510,7 +511,6 @@ footer .footer-bottom span{
 .whatsapp:hover{
     background-color: #21422e;
     border: 1px #25d366 solid;
-    transition: 0.4s;
 }
 
 .whatsapp span.call{

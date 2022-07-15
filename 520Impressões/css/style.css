@@ -241,7 +241,7 @@ section.first_background h1 span{
 }
 
 .bigger .flex-container .pic h1.card_content{
-    font-size: 1.24rem;
+    font-size: 1em;
     margin-left: 6px;
     font-weight: 650;
     transform: translateY(-45%);
@@ -705,22 +705,24 @@ footer .footer-bottom span{
     }
     .bigger .flex-container .pic{
         font-size: 12.6px;
-        font-family: Arial, Helvetica, sans-serif;
         min-height: 170px;
         min-width: 120px;
         max-width: 120px;
         max-height: 170px;
         margin: 16px;
-        background-color: rgb(255, 248, 194);
-        box-shadow: inset -1px -1px 20px 0px #b59225;
-        border-radius: 8px;
-        cursor: pointer;
     }
+
+    .bigger .flex-container .pic:hover{
+        height: 180px;
+        width: 130px;
+        margin: 11px;
+        font-size: 16px;
+    }
+
     .bigger .flex-container .pic p{
         padding: 4px;
     }
     .bigger .flex-container .pic h1.card_content{
-        font-size: 0.8rem;
         margin-left: 6px;
         transform: translateY(-60%);
     }

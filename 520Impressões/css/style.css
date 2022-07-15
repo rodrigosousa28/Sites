@@ -597,6 +597,11 @@ footer .footer-bottom span{
         border-radius: 8px;
     }
 
+    nav .mobile-menu ul a:active{
+        background-color: #b59225;
+        border-radius: 8px;
+    }
+
     nav .mobile-menu ul a li{
         display: inline-block
     }
@@ -699,6 +704,21 @@ footer .footer-bottom span{
 
 @media screen and (max-width: 720px) {
 
+    .whatsapp{
+        padding: 6px;
+        border-radius: 6px;
+    }
+    
+    .whatsapp span.call{
+        line-height: 20px;
+        padding-left: 8px;
+        font-size: 0.6rem;
+    }
+    
+    .whatsapp img{
+        height: 18px;
+    }
+
     .flex-container{
         width: 100vw !important;
         margin: 0 !important;
@@ -710,12 +730,20 @@ footer .footer-bottom span{
         max-width: 120px;
         max-height: 170px;
         margin: 16px;
+        transition: 0s;
+    }
+
+    .bigger .flex-container .pic:active{
+        height: 186px;
+        width: 136px;
+        margin: 8px;
+        font-size: 16px;
     }
 
     .bigger .flex-container .pic:hover{
-        height: 180px;
-        width: 130px;
-        margin: 11px;
+        height: 186px;
+        width: 136px;
+        margin: 8px;
         font-size: 16px;
     }
 

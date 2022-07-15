@@ -140,7 +140,7 @@ section.first_background .titulo{
 section.first_background .titulo h1{
     width: 60vw;
     margin: 0 auto;
-    font-size: 10vh;
+    font-size: calc(0.75rem + 4vw);
     font-weight: bold;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
@@ -149,7 +149,7 @@ section.first_background .titulo h1{
 }
 
 section.first_background h1 span{
-    font-size: 10vh;
+    font-size: calc(1rem + 5vw);
     font-weight: bolder;
     color: rgb(31, 31, 31);
     text-transform: capitalize;
@@ -176,6 +176,10 @@ section.first_background h1 span{
     text-transform: capitalize;
 }
 
+.container .our-services span{
+    width: 50%;
+}
+
 .container .our-services .search{
     display: flex;
     flex-direction: column;
@@ -183,17 +187,22 @@ section.first_background h1 span{
 }
 
 .container .our-services .search input{
-    height: 30px;
+    height: 45%;
+    max-height: 30px;
     padding: 2vh 0vw 2vh 0.5vw;
     background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     background-position: calc(98%);
     background-size: 15%;
-    border: 1.6px solid black;
+    border: 1.6px solid #656565;
 } 
 
 .container .our-services .search input::placeholder{
     color: #a3a3a3;
+}
+
+.container .our-services span{
+    text-shadow: 1px 1px gray;
 }
 
 .bigger{
@@ -215,14 +224,14 @@ section.first_background h1 span{
 .bigger .flex-container .pic{
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 280px;
-    width: 200px;
+    min-height: 280px;
+    min-width: 200px;
     max-width: 200px;
     max-height: 280px;
     margin: 40px;
     background-color: rgb(255, 248, 194);
     box-shadow: inset -1px -1px 20px 0px #b59225;
-    border-radius: 8px;
+    border-radius: 7px;
     cursor: pointer;
 }
 
@@ -238,13 +247,14 @@ section.first_background h1 span{
     transform: translateY(-45%);
     letter-spacing: 0.4px;
     font-style: italic;
-    color: rgb(44, 46, 45);
+    color: rgb(80, 68, 34);
 }
 
 .bigger .flex-container .pic p.promotion{
     background-color: #F19839;
     float: right;
-    width: 52%;
+    width: auto;
+    padding-left: 12px;
     transform: translateY(-750%);
     border-radius: 8px 0px 0px 8px;
     color: #fff;
@@ -274,7 +284,7 @@ section.first_background h1 span{
 .bigger .flex-container .pic p.subtitle{
     z-index: -1;
     font-style: italic;
-    color: rgb(30, 31, 31);
+    color: rgb(80, 68, 34);
     transform: translateY(-5%);
 }
 
@@ -291,7 +301,7 @@ section.first_background h1 span{
 .bigger .flex-container .pic img{
     height: 60%;
     width: 100%;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
 }
 
 h1.titulocont{
@@ -515,6 +525,36 @@ footer .footer-bottom span{
 }
 
 @media screen and (max-width: 880px){
+
+    h1.titulocont{
+        padding: 50px 0;
+        font-size: 5vh;
+    }
+
+    section.first_background{
+        padding-bottom: 1vh;
+        height: 80vw;
+        background-size: calc(160%);
+        background-position-y: calc(20%);
+    }
+
+    section.first_background .logo{
+        height: 40vw;
+    }
+
+    section.first_background .titulo h1{
+        font-size: calc(0.75rem + 8vw);
+        text-shadow: 2px 2px 2px #b59225;
+    }
+
+    section.first_background .titulo h1 span{
+        font-size: calc(0.75rem + 9vw);
+    }
+
+    nav header .title .content span{
+        display: none;
+    }
+
     nav header .midias{
         display: none;
     }
@@ -573,38 +613,129 @@ footer .footer-bottom span{
     .biggerc{
         flex-direction: column;
         align-items: center;
+        width: 60vw;
     }
 
     .biggerc .contato{
         margin-bottom: 50px;
         width: 100%;
+        max-height: 60vh;
     }
 
-    .biggerc .local{
+    .biggerc .contato{
         margin-bottom: 50px;
         width: 100%;
+        max-height: 60vh;
     }
 
     .biggerc .contato h2{
         margin-bottom: 10px;
         padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .biggerc .contato p{
+        font-size: 0.8rem;
+    }
+
+    .biggerc .contato .formulario{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        padding: 4px;
+        max-height: 10vh;
+    }
+
+    .biggerc .contato .formulario::placeholder{
+        font-size: 0.6rem;
+    }
+
+    .biggerc .contato .usertext{
+        font-size: 0.6rem;
+        padding: 8px;
+        border-radius: 6px;
+        margin-top: 3px;
+    }
+
+    .biggerc .local{
+        margin-bottom: 50px;
+        width: 100%;
+        max-height: 60vh;
+        padding-bottom: 30px
+    }
+
+    .biggerc .local h2{
+        margin-bottom: 0;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .biggerc .local p{
+        padding-top: 0;
+        font-size: 0.8rem;
+    }
+
+    .container .our-services span{
+        font-size: calc(0.75rem + 1.2vw);
+    }
+
+    .container .our-services .search{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .container .our-services .search input{
+        width: 70%;
+        background-size: 15%;
+        padding: 0px 0px 0px 5px;
+    }
+
+    .container .our-services .search input::placeholder{
+        font-size: 0.6rem;
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
+
     .flex-container{
-        width: 100vw;
+        width: 100vw !important;
+        margin: 0 !important;
     }
-}
-
-@media screen and (max-width: 600px) {
-    section.first_background{
-            padding-bottom: 6vh;
+    .bigger .flex-container .pic{
+        font-size: 12.6px;
+        font-family: Arial, Helvetica, sans-serif;
+        min-height: 170px;
+        min-width: 120px;
+        max-width: 120px;
+        max-height: 170px;
+        margin: 16px;
+        background-color: rgb(255, 248, 194);
+        box-shadow: inset -1px -1px 20px 0px #b59225;
+        border-radius: 8px;
+        cursor: pointer;
     }
-}
+    .bigger .flex-container .pic p{
+        padding: 4px;
+    }
+    .bigger .flex-container .pic h1.card_content{
+        font-size: 0.8rem;
+        margin-left: 6px;
+        transform: translateY(-60%);
+    }
+    .bigger .flex-container .pic p.subtitle{
+        font-size: 0.7rem;
+        transform: translateY(-20%);
+    }
 
-@media screen and (max-width: 460px) {
-    section.first_background{
-            padding-bottom: 12vh;
+    .bigger .flex-container .pic p.promotion{
+        font-size: 0.7rem;
+        transform: translateY(-720%);
+    }
+    
+    .biggerc{
+        padding-bottom: 100px;
+        width: 80vw;
     }
 }

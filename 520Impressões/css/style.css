@@ -150,7 +150,7 @@ section.first_background .titulo{
 section.first_background .titulo h1{
     width: 60vw;
     margin: 0 auto;
-    font-size: calc(0.75rem + 4vw);
+    font-size: calc(0.75rem + 3vw);
     font-weight: bold;
     text-align: center;
     font-family: 'Shadows Into Light', cursive;
@@ -161,7 +161,6 @@ section.first_background .titulo h1{
 }
 
 section.first_background h1 span{
-    font-size: calc(1rem + 5vw);
     font-weight: bolder;
     color: rgb(31, 31, 31);
     text-transform: capitalize;

@@ -1,7 +1,29 @@
+/*Animações*/
+
 @keyframes changeop{
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
+[data-animation]{
+    opacity: 0;
+    transition: 1.5s;
+}
+
+[data-animation="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-animation="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-animation].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/*Animações*/
 
 *{
     box-sizing: border-box;
@@ -90,8 +112,8 @@ nav header .midias ul a li{
 }
 
 nav header .midias ul a:hover{
-    color: #1D61DD;
-    border-bottom: 3.5px solid #1D61DD;
+    color: #b59225;
+    border-bottom: 3.5px solid #b59225;
 }
 
 /*Responsive menu*/
@@ -604,12 +626,12 @@ footer .footer-bottom span{
     }
 
     nav .mobile-menu ul a:hover{
-        background-color: #1D61DD;
+        background-color: #b59225;
         border-radius: 8px;
     }
 
     nav .mobile-menu ul a:active{
-        background-color: #1D61DD;
+        background-color: #b59225;
         border-radius: 8px;
     }
 

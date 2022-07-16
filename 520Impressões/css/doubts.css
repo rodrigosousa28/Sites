@@ -36,6 +36,14 @@ section.only{
     background-color: #FFFFFFBB;
     border-radius: 10px;
     box-sizing: content-box;
+    opacity: 1;
+    animation-name: changeop;
+    animation-duration: 1.2s;
+}
+
+@keyframes changeop{
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 section.only .panel-group{

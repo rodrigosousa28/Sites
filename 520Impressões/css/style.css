@@ -129,6 +129,14 @@ section.first_background .logo img{
     height: 100%;
     border-radius: 50%;
     box-shadow: 1px 1px 11px 1px black;
+    opacity: 1;
+    animation-name: changeop;
+    animation-duration: 2s;
+}
+
+@keyframes changeop{
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 section.first_background .titulo{
@@ -146,6 +154,8 @@ section.first_background .titulo h1{
     font-family: 'Shadows Into Light', cursive;
     color: #fff;
     text-shadow: 3px 4px #615d52;
+    animation-name: changeop;
+    animation-duration: 2s;
 }
 
 section.first_background h1 span{

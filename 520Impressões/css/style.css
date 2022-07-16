@@ -577,11 +577,10 @@ footer .footer-bottom span{
 
     section.first_background .titulo h1{
         font-size: calc(0.75rem + 8vw);
-        text-shadow: 2px 2px 2px #b59225;
     }
 
     section.first_background .titulo h1 span{
-        font-size: calc(0.75rem + 9vw);
+        font-size: calc(0.75rem + 8vw);
     }
 
     nav header .title .content span{

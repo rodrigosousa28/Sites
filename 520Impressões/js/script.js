@@ -22,6 +22,10 @@ function animeScroll(){
     })
 }
 
-window.addEventListener('scroll', function(){
-    animeScroll();
-})
+if(target.length){
+    window.addEventListener('scroll', function(){
+        animeScroll();
+    })
+}
+
+

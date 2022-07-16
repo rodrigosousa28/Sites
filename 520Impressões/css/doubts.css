@@ -43,6 +43,11 @@ section.only .panel-group{
     margin: 0;
 }
 
+.panel-default{
+    margin-top: 10px !important;
+    box-shadow: 4px 4px 4px 0px #9e9e9e !important;
+}
+
 @media screen and (max-width: 500px){
 
     section.only{

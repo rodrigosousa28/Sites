@@ -1,3 +1,8 @@
+@keyframes changeop{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,6 +21,8 @@ nav{
     box-shadow: 1px 1px 11px 1px #161616;
     position: fixed;
     z-index: 1;
+    animation-name: changeop;
+    animation-duration: 2s;
 }
 
 nav header{
@@ -132,11 +139,6 @@ section.first_background .logo img{
     opacity: 1;
     animation-name: changeop;
     animation-duration: 2s;
-}
-
-@keyframes changeop{
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
 
 section.first_background .titulo{

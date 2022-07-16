@@ -6,38 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <title>Landing Page</title>
 </head>
 
 <body>
 
+    <div class="back">
+        <img src="./images/bg-desktop.svg" alt="">
+    </div>
+
     <header class="logo">
-        <img src="images/logo.svg">
+        <section>
+            <img src="images/logo.svg">
+        </section>
     </header>
 
-    <section class="container">
-        <div class="content">
-            <img src="images/illustration-mockups.svg">
-        </div>
-        <div class="text">
-            <h1>build the community<br>your fans will love</h1><br>
-            <p>Huddle re-imagines the way we build communities. You have<br>
-                a voice, but so does your audience. Create connections with<br>
-                your users as you engage in genuine discussion.
-            </p>
-            <ul>
-                <a href="#">
-                    <li>register</li>
-                </a>
-            </ul>
+    <section class="box">
+        <div class="flex-container">
+            <div class="site">
+                <img src="./images/illustration-mockups.svg" alt="">
+            </div>
+            <div class="container">
+                <div class="text">
+                    <h1 class="flex-element">build the community<br>your fans will love</h1>
+                    <p class="flex-element">Huddle re-imagines the way we build communities. You have<br>a voice, but so
+                        does your audience.
+                        Create connections with<br>your users as you engage in genuine discussion.</p>
+                    <div class="register">
+                        <button>Register</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <div class="fundo">
-        <div class="img">
-            <img src="images/bg-desktop.svg">
+    <footer>
+        <div class="social_icons_rounded">
+            <ul>
+                <li><a href="#" class="gap f_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                <li><a href="#" class="gap t_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                <li><a href="#" class="gap i_instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+            </ul>
         </div>
-    </div>
+    </footer>
+
 </body>
 
 </html>

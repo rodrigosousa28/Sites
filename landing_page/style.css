@@ -1,3 +1,9 @@
+@keyframes animation{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,150 +13,173 @@
 body{
     box-sizing: content-box;
     background-color: rgb(103, 75, 176);
+    background-repeat: no-repeat;
+    background-position-y: calc(30%);
+    background-position-x: calc(-10%);
     overflow: hidden;
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.logo img{
-    width: 200px;
-}
-
-.fundo{
+div.back{
+    position: absolute;
+    transform: translateY(-4%);
+    height: 105vh;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    z-index: -1;
 }
 
-.fundo .img{
-    width: 80%;
+div.back img{
+    height: 100%;
+    width: 88%;
+}
+
+header.logo{
+    width: 100vw;
+    height: auto;
+}
+
+header.logo section{
+    width: 90%;
     margin: 0 auto;
+    position: relative;
+    padding: 50px;
 }
 
-.fundo .img img{
+header.logo section img{
+    width: 200px;
+    animation-name: animation;
+    animation-duration: 2s;
+}
+
+section.box{
+    width: 100vw;
+    height: auto;
+}
+
+section.box .flex-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+section.box .flex-container .site{
+    display: flex;
+}
+
+section.box .flex-container .site img{
+    height: 98%;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
 }
 
-.logo{
-    padding: 5vh;
-    padding-left: 5vw;
-    position: absolute;
+section.box .flex-container .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 70px;
 }
 
-.container{
-    width: 100%;
-    position: absolute;
+section.box .flex-container .text{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.container .content{
-    display: inline-block;
-    margin-top: 20vh;
-    margin-left: 5vw;
-    margin-right: 10vh;
-    height: 490px;
-}
-
-.container .content img{
-    width: 100%;
-    height: 100%;
-}
-
-.container .text{
-    color: rgb(196, 177, 234);
-    box-sizing: border-box;
-    position: absolute;
-    display: inline-block;
-    height: 490px;
-    margin-top: 20vh;
-    padding-top: 6vh;
-}
-
-.container .text h1{
-    font-size: 2.4rem;
+section.box .flex-container .text h1{
+    font-size: 2.6rem;
+    line-height: 4rem;
+    font-weight: 600;
     text-transform: capitalize;
-    line-height: 3.4rem;
-    color: white;
+    color: #fff;
 }
 
-.container .text p{
-    font-size: 1.1rem;
-    line-height: 1.5rem;
-    margin-bottom: 5vh;
+.flex-element{
+    margin-bottom: 20px;
 }
 
-.container .text ul{
-    list-style: none;
-    display: inline-block;
-    height: 7vh;
-    width: 11.5vw;
+section.box .flex-container .text p{
+    font-size: 1.15rem;
+    color: rgb(219 207 244);
+}
+
+section.box .flex-container .text .register{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+section.box .flex-container .text .register button{
+    padding: 14px 50px;
+    font-size: 1rem;
     border-radius: 30px;
-    box-shadow: 3px 6px 15px rgb(31, 22, 52);
-}
-
-.container .text ul a{
-    text-decoration: none;
+    border-color: transparent;
     color: rgb(103, 75, 176);
-    display: block;
-    height: 100%;
+    box-shadow: 4px 5px 12px 0px rgb(58, 42, 94);
+}
+
+footer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    bottom: 0px;
+}
+
+.social_icons_rounded{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social_icons_rounded ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.social_icons_rounded ul li a {
+    float: left;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
     text-align: center;
-    border-radius: 30px;
+    margin-bottom: 40px;
+    border: 1px solid #e0e0e0
 }
 
-.container .text ul a li{
-    background-color: #fff;
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    display: inline-block;
-    line-height: 7vh;
-    width: 100%;
-    border-radius: 30px;
+.social_icons_rounded ul li a i {
+    font-size: 16px;
+    color: #e0e0e0;
 }
 
-.container .text ul:active{
-    padding-top: 3px;
-    padding-left: 3px;
-    box-shadow: none;
-    transition: 0.3s;
+.f_facebook:hover {
+    color: #fff;
+    background: #2a66b3;
+    border: 1px solid #2a66b3
 }
 
-@media screen and (max-width: 1120px){
-    body{
-        overflow-y: auto;
-        
-    }
-    .logo{
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
-    .container{
-        
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-top: 20vh;
-    }
-    .container .content{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .container .text{
-        display: block;
-        width: 0 auto;
-        margin: 0;
-        width: 100%;
-    }
-    .fundo{
-        width: 100vw;
-        margin-bottom: 100px;
-    }
-    .fundo .img{
-        
-        width: 100%;
-        display: inline-block;
-    }
+.t_twitter:hover {
+    color: #fff;
+    background: #35bbec;
+    border: 1px solid #35bbec
 }
+
+.i_instagram:hover {
+    color: #fff;
+    background: #cb2027;
+    border: 1px solid #cb2027
+}
+
+.gap {
+    margin-left: 12px
+}
+
+/*rgb(31, 22, 52)*/
+/*rgb(103, 75, 176)*/
+
 

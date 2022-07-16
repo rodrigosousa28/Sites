@@ -3,7 +3,6 @@
     to{opacity: 1;}
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -54,6 +53,8 @@ header.logo section img{
 section.box{
     width: 100vw;
     height: auto;
+    animation-name: animation;
+    animation-duration: 2s;
 }
 
 section.box .flex-container{
@@ -126,6 +127,8 @@ footer{
     width: 100vw;
     height: auto;
     bottom: 0px;
+    animation-name: animation;
+    animation-duration: 2s;
 }
 
 .social_icons_rounded{
@@ -149,7 +152,8 @@ footer{
     width: 40px;
     text-align: center;
     margin-bottom: 40px;
-    border: 1px solid #e0e0e0
+    border: 1px solid #e0e0e0;
+    transition: 0.2s;
 }
 
 .social_icons_rounded ul li a i {
@@ -177,6 +181,17 @@ footer{
 
 .gap {
     margin-left: 12px
+}
+
+@media screen and (max-width: 1460px){
+
+    body{
+        overflow-y: auto;
+    }
+
+    section.box .flex-container{
+        flex-direction:column-reverse;
+    }
 }
 
 /*rgb(31, 22, 52)*/

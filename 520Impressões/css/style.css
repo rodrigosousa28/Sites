@@ -1,0 +1,803 @@
+/*Animações*/
+
+@keyframes changeop{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+[data-animation]{
+    opacity: 0;
+    transition: 1.5s;
+}
+
+[data-animation="left"]{
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-animation="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-animation].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/*Animações*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+    
+}
+
+nav{
+    height: 90px;
+    width: 100%;
+    background-color: rgb(4, 6, 5);
+    box-shadow: 1px 1px 11px 1px #161616;
+    position: fixed;
+    z-index: 1;
+    animation-name: changeop;
+    animation-duration: 2s;
+}
+
+nav header{
+    height: 100%;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav header .title{
+    height: 90px;
+}
+
+nav header .title .content{
+    color: aliceblue;
+    font-size: 24px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding-top: 20px;
+    height: 100%;
+    float: right;
+}
+
+nav header .title .content img{
+    height: 70%;
+}
+
+nav header .title .content span{
+    float: right;
+    line-height: 56px;
+    padding-left: 20px;
+    transform: translateY(-10%);
+}
+
+nav header .midias{
+    height: 90px;
+}
+
+nav header .midias ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    float: right;
+    padding: 0;
+}
+
+nav header .midias ul a{
+    box-sizing: content-box;
+    font-size: 1.2rem;
+    display: flex;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    height: 98%;
+    padding: 0px 20px;
+    align-items: center;
+    transition: 0.2s;
+}
+
+nav header .midias ul a li{
+    display: inline-block;
+}
+
+nav header .midias ul a:hover{
+    color: #b59225;
+    border-bottom: 3.5px solid #b59225;
+}
+
+/*Responsive menu*/
+nav header .mobile-menu-icon{
+    display: none;
+}
+
+nav .mobile-menu{
+    display: none;
+}
+/*Responsive menu*/
+
+section.first_background{
+    box-sizing: border-box;
+    box-sizing: content-box;
+    padding-top: 20vh;
+    padding-bottom: 2vh;
+    height: 65vh;
+    width: 100vw;
+    background-image: url(../images/fundo3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: calc(23%);
+    background-repeat: no-repeat; 
+    box-shadow: 1px 1px 11px 1px gray; 
+}
+
+section.first_background .background-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%; 
+}
+
+section.first_background .logo{
+    height: 30vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.first_background .logo img{
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 1px 1px 11px 1px black;
+    opacity: 1;
+    animation-name: changeop;
+    animation-duration: 2s;
+}
+
+section.first_background .titulo{
+    display: flex;
+    height: auto;
+    width: 100vw;
+}
+
+section.first_background .titulo h1{
+    width: 60vw;
+    margin: 0 auto;
+    font-size: calc(0.75rem + 3vw);
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    color: #fff;
+    text-shadow: 3px 4px #615d52;
+    animation-name: changeop;
+    animation-duration: 2s;
+}
+
+section.first_background h1 span{
+    font-weight: bolder;
+    color: rgb(31, 31, 31);
+    text-transform: capitalize;
+}   
+
+.container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #7c7b7b;
+}
+
+.container .our-services{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    line-height: 7vh;
+    margin: 0 auto;
+    padding: 2vh 0;
+    font-size: 3.5vh;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.container .our-services span{
+    width: 50%;
+}
+
+.container .our-services .search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .our-services .search input{
+    height: 45%;
+    max-height: 30px;
+    padding: 2vh 0vw 2vh 0.5vw;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: calc(98%);
+    background-size: 15%;
+    border: 1.6px solid #656565;
+} 
+
+.container .our-services .search input::placeholder{
+    color: #a3a3a3;
+}
+
+.container .our-services span{
+    text-shadow: 1px 1px gray;
+}
+
+.bigger{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    padding: 50px 0px 100px 0px;
+    border-bottom: 1px solid #7c7b7b;
+}
+
+.bigger .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.bigger .flex-container .pic{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 280px;
+    min-width: 200px;
+    max-width: 200px;
+    max-height: 280px;
+    margin: 40px;
+    background-color: rgb(255, 248, 194);
+    box-shadow: inset -1px -1px 20px 0px #b59225;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+
+.bigger .flex-container .pic p{
+    padding: 6px;
+}
+
+.bigger .flex-container .pic h1.card_content{
+    font-size: 1em;
+    margin-left: 6px;
+    font-weight: 650;
+    transform: translateY(-45%);
+    letter-spacing: 0.4px;
+    font-style: italic;
+    color: rgb(80, 68, 34);
+}
+
+.bigger .flex-container .pic p.promotion{
+    background-color: #F19839;
+    float: right;
+    width: auto;
+    padding-left: 12px;
+    transform: translateY(-750%);
+    border-radius: 8px 0px 0px 8px;
+    color: #fff;
+    font-weight: 600;
+    text-align: right;
+    word-spacing: 2px;
+    z-index: -1;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.bigger .flex-container .pic p.price{
+    box-sizing: content-box;
+    background-color: #1D61DD;
+    display: inline-block;
+    width: auto;
+    padding-right: 12px;
+    transform: translateY(-70%);
+    border-radius: 0px 8px 8px 0px;
+    color: #fff;
+    font-weight: bold;
+    word-spacing: 2px;
+    z-index: -1;
+    font-style: italic;
+}
+
+.bigger .flex-container .pic p.subtitle{
+    z-index: -1;
+    font-style: italic;
+    color: rgb(80, 68, 34);
+    transform: translateY(-5%);
+}
+
+
+.bigger .flex-container .pic:hover{
+    height: 320px;
+    width: 240px;
+    max-width: 240px;
+    max-height: 320px;
+    margin: 20px;
+    font-size: 22px;
+}
+
+.bigger .flex-container .pic img{
+    height: 60%;
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+}
+
+h1.titulocont{
+    width: 100vw;
+    text-align: center;
+    padding: 100px 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 6.5vh;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+}
+
+.caixa{
+    width: 100vw;
+}
+
+.biggerc{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    border-bottom: 1px solid #7c7b7b;
+    width: 80vw;
+    height: auto;
+    justify-content: space-between;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.biggerc .contato{
+    width: 40%;
+    padding: 20px 25px;
+    text-align: center;
+    border-radius: 24px;
+    background-color: rgb(255, 248, 194);
+    box-shadow: inset -1px -1px 20px 0px #b59225;
+}
+
+.biggerc .contato p{
+    text-align: justify;
+    padding: 10px 10px 20px 0px;
+}
+
+.biggerc .contato h2{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 4.2vh;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+}
+
+.biggerc .contato .formulario{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 600px;
+}
+
+.biggerc .contato .formulario:active{
+    border-color: #F19839;
+}
+
+.biggerc .contato .usertext{
+    float: right;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(4, 6, 5);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.biggerc .contato .usertext:hover{
+    background-color: #7c7b7b;
+    color: #fcfcfc;
+}
+
+.biggerc .local{
+    display: flex;
+    width: 40%;
+    padding: 20px 25px;
+    border-radius: 24px;
+    flex-direction: column;
+    background-color: rgb(255, 248, 194);
+    box-shadow: inset -1px -1px 20px 0px #b59225;
+}
+
+.border{
+    padding: 10px;
+    border: 1px solid #7c7b7b;
+}
+
+.biggerc .local h2{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 4.2vh;
+    font-weight: 500;
+    text-shadow: 1px 1px gray;
+}
+
+.biggerc .local p{
+    text-align: justify;
+    padding: 10px 10px 30px 0;
+}
+
+footer{
+    background-color: rgb(4, 6, 5);
+    height: auto;
+    width: 100vw;
+    padding-top: 20px;
+    color: #fff;
+    box-shadow: 1px 1px 11px 1px rgb(63, 60, 60);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+footer .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .footer-content h3{
+    font-size: calc(1rem + 1.5vw);
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-bottom: 10px;
+}
+
+footer .footer-content p{
+    max-width: 500px;
+    margin: 15px auto;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+footer .footer-content .social{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 2rem 0;
+    padding-inline-start: 0;
+}
+
+footer .footer-content .social li{
+    margin: 0 11px;
+}
+
+footer .footer-content .social li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .footer-content .social li a i{
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+footer .footer-content .social li a:hover i{
+    color: #b59225;
+    transition: 0.3s;
+}
+
+footer .footer-bottom{
+    background-color: #000;
+    font-family: 'Open Sans';
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+}
+
+footer .footer-bottom span{
+    text-transform: uppercase;
+    opacity: 0.4;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 40px;
+    right: 8px;
+    margin: 0px;
+    padding: 10px;
+    color: #fff;
+    background-color: #25d366;
+    text-decoration: none;
+    border: 1px #21422e solid;
+    box-shadow: 1px 1px 11px #21422e;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: 0.25s;
+    z-index: 1;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.whatsapp:hover{
+    background-color: #21422e;
+    border: 1px #25d366 solid;
+}
+
+.whatsapp span.call{
+    float: right;
+    line-height: 28px;
+    padding-left: 10px;
+    font-size: 0.75rem;
+}
+
+.whatsapp img{
+    height: 25px;
+}
+
+@media screen and (max-width: 880px){
+
+    h1.titulocont{
+        padding: 50px 0;
+        font-size: 5vh;
+    }
+
+    section.first_background{
+        padding-bottom: 1vh;
+        height: 80vw;
+        background-size: calc(160%);
+        background-position-y: calc(20%);
+    }
+
+    section.first_background .logo{
+        height: 40vw;
+    }
+
+    section.first_background .titulo h1{
+        font-size: calc(0.75rem + 8vw);
+    }
+
+    section.first_background .titulo h1 span{
+        font-size: calc(0.75rem + 8vw);
+    }
+
+    nav header .title .content span{
+        display: none;
+    }
+
+    nav header .midias{
+        display: none;
+    }
+    nav header .mobile-menu-icon{
+        display: block;
+        line-height: 90px;
+        float: right;
+    }
+
+    nav header .mobile-menu-icon buttom{
+        display: block;
+        box-sizing: border-box;
+        line-height: 65px;
+        padding-top: 25px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav .mobile-menu ul{
+        display: flex;
+        width: 80vw;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 0.8rem;
+    }
+    nav .mobile-menu ul a{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    nav .mobile-menu ul a:hover{
+        background-color: #b59225;
+        border-radius: 8px;
+    }
+
+    nav .mobile-menu ul a:active{
+        background-color: #b59225;
+        border-radius: 8px;
+    }
+
+    nav .mobile-menu ul a li{
+        display: inline-block
+    }
+
+    .open{
+        display: flex !important;
+        width: 100vw;
+        justify-content: center;
+        background-color: rgb(4, 6, 5);
+    }
+    section.first_background .titulo h1{
+        width: 85vw;
+    }
+    .biggerc{
+        flex-direction: column;
+        align-items: center;
+        width: 60vw;
+    }
+
+    .biggerc .contato{
+        margin-bottom: 50px;
+        width: 100%;
+        max-height: 60vh;
+    }
+
+    .biggerc .contato{
+        margin-bottom: 50px;
+        width: 100%;
+        max-height: 60vh;
+    }
+
+    .biggerc .contato h2{
+        margin-bottom: 10px;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .biggerc .contato p{
+        font-size: 0.8rem;
+    }
+
+    .biggerc .contato .formulario{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        padding: 4px;
+        max-height: 10vh;
+    }
+
+    .biggerc .contato .formulario::placeholder{
+        font-size: 0.6rem;
+    }
+
+    .biggerc .contato .usertext{
+        font-size: 0.6rem;
+        padding: 8px;
+        border-radius: 6px;
+        margin-top: 3px;
+    }
+
+    .biggerc .local{
+        margin-bottom: 50px;
+        width: 100%;
+        max-height: 60vh;
+        padding-bottom: 30px
+    }
+
+    .biggerc .local h2{
+        margin-bottom: 0;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .biggerc .local p{
+        padding-top: 0;
+        font-size: 0.8rem;
+    }
+
+    .container .our-services span{
+        font-size: calc(0.75rem + 1.2vw);
+    }
+
+    .container .our-services .search{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .container .our-services .search input{
+        width: 70%;
+        background-size: 15%;
+        padding: 0px 0px 0px 5px;
+    }
+
+    .container .our-services .search input::placeholder{
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .whatsapp{
+        padding: 6px;
+        border-radius: 6px;
+    }
+    
+    .whatsapp span.call{
+        line-height: 20px;
+        padding-left: 8px;
+        font-size: 0.6rem;
+    }
+    
+    .whatsapp img{
+        height: 18px;
+    }
+
+    .flex-container{
+        width: 100vw !important;
+        margin: 0 !important;
+    }
+    .bigger .flex-container .pic{
+        font-size: 12.6px;
+        min-height: 170px;
+        min-width: 120px;
+        max-width: 120px;
+        max-height: 170px;
+        margin: 16px;
+        transition: 0s;
+    }
+
+    .bigger .flex-container .pic:active{
+        height: 186px;
+        width: 136px;
+        margin: 8px;
+        font-size: 16px;
+    }
+
+    .bigger .flex-container .pic:hover{
+        height: 186px;
+        width: 136px;
+        margin: 8px;
+        font-size: 16px;
+    }
+
+    .bigger .flex-container .pic p{
+        padding: 4px;
+    }
+    .bigger .flex-container .pic h1.card_content{
+        margin-left: 6px;
+        transform: translateY(-60%);
+    }
+    .bigger .flex-container .pic p.subtitle{
+        font-size: 0.7rem;
+        transform: translateY(-20%);
+    }
+
+    .bigger .flex-container .pic p.promotion{
+        font-size: 0.7rem;
+        transform: translateY(-720%);
+    }
+    
+    .biggerc{
+        padding-bottom: 100px;
+        width: 80vw;
+    }
+}

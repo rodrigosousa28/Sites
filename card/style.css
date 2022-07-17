@@ -1,6 +1,9 @@
-body{
+*{
+    margin: 0;
     box-sizing: border-box;
-    padding: 0;
+}
+
+body{
     margin: 0;
     background-color: rgb(10, 12, 27);
     font-size: 1.4rem;
@@ -8,114 +11,162 @@ body{
     color: #fff;
 }
 
-span{
-    color: rgb(160, 104, 209)
-}
-
-p{
-    color: rgb(139, 137, 159);
-    text-align: left;
-    font-size: 1.3rem;
-}
-
-#principal{
-    list-style: none;
-}
-
-#principal li{
-    display:block;
-}
-
-#container1{
-    width: 1234px;
-    height: 500px;
-    border-radius: 20px;
-    display: inline-block;
+div.container1{
+    display: flex;
     position: absolute;
-    top: 50%;
     left: 50%;
-    overflow: hidden;
+    top: 50%;
     transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    height: 510px;
+    width: 1300px;
+    margin: 0 auto;
+    border-radius: 15px;
 }
 
-#container{
-    display: inline-block;
-    position: absolute;
-    
-}
-/*Colocando um fundo de alguma cor em uma imagem*/
-#fundo{
-    width: 600px;
-    height: 500px;
-    float: right;
-    margin-left: 630px;
-    border-radius:0px 20px 20px 0px;
+div.container1 .marketing{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 65px;
+    padding-right: 125px;
+    padding-left: 90px;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
 }
 
-#picture{
-    display: inline-block;
-    background-color: rgb(57, 5, 86);
-    width: 600px;
-    height: 500px;
-    opacity: 0.5;
-    position: absolute;
-    border-radius:0px 20px 20px 0px;
-  }
-
-img{
-    border-radius:0px 20px 20px 0px;
+div.container1 .marketing h1{
+    font-size: 2.6rem;
+    width: 100%;
+    margin-bottom: 25px;
 }
 
-/*Colocando um fundo de alguma cor em uma imagem*/
-
-#marketing{
-    box-sizing: border-box;
-    display: inline-block;
-    background-color: rgb(28, 25, 56);
-    width: 630px;
-    height: 500px;
-    padding: 80px;
-    padding-top: 40px;
-    position: absolute;
-
-  }
-
-#marketing ul{
-    width: 470px;
-    margin: 0;
-    padding: 0;
-    padding-top: 50px;
-    display: inline-block;
-    list-style: none;
+div.container1 .marketing h1 span{
+    color:  rgb(160, 104, 209);
 }
 
-#marketing ul li{
-      margin: 0;
-      margin-right: 80px;
-      padding: 0;
-      display: inline-block;
-      font-size: 0.9rem;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
-      letter-spacing: 1px;
-      color: rgb(139, 137, 159);
-  }
-
-  #marketing ul .last{
-    margin: 0;
-    margin-right: 0;
-    padding: 0;
-    display: inline-block;
-    font-size: 0.9rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 1px;
+div.container1 .marketing p{
     color: rgb(139, 137, 159);
+    font-size: 1.18rem;
+    line-height: 1.8rem;
+    margin-bottom: 50px;
 }
 
-#marketing ul li h2{
-    margin: 0;
-    margin-bottom: 5px;
-    font-size: 30px;
-    font-family:Arial, Helvetica, sans-serif;
-    color: #fff;
+div.container1 .marketing ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.25rem;
 }
 
+div.container1 .marketing ul h3{
+    color: rgb(139, 137, 159);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transform: translateY(65%);
+    text-transform: uppercase;
+}
+
+div.marketing{
+    background-color: rgb(28, 25, 56);
+    width: 50%;
+    height: 100%;
+}
+
+div.container{
+    background-color: rgb(96 16 141);
+    height: 100%;
+    width: 45%;
+    border-radius: 0px 15px 15px 0px;
+}
+
+div.container img{
+    display: inline-block;
+    border-radius: 0px 15px 15px 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0.45;
+}
+
+div.break{
+    display: none;
+}
+
+
+@media screen and (max-width:1000px){
+    div.container1{
+        flex-direction: column-reverse;
+        height: auto;
+        width: 80vw;
+        top: 75%;
+    }
+
+    div.container1 .marketing{
+        border-radius: 0px 0px 15px 15px;
+        width: 100%;
+        padding: 30px;
+        padding-top: 40px;
+    }
+
+    div.container1 .marketing h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    div.container1 .marketing p{
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+
+    div.container1 .marketing ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    div.container1 .marketing ul li{
+        box-sizing: content-box;
+        margin-bottom: 2rem;
+    }
+
+    div.container1 .marketing ul li h2{
+        box-sizing: content-box;
+        text-align: center;
+        line-height: 3rem;
+    }
+
+    div.container1 .marketing ul h3{
+        transform: translate(0, 0);
+    }
+
+    div.container1 .container{
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 30vh;
+    }
+
+    div.container1 .container img{
+        border-radius: 15px 15px 0px 0px;
+        height: 100%;
+    }
+
+    div.break{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:380px){
+    div.container1{
+        top: 85%;
+    }
+}

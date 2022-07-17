@@ -22,7 +22,7 @@ body{
 div.back{
     position: absolute;
     transform: translateY(-4%);
-    height: 105vh;
+    height: 108vh;
     width: 100vw;
     z-index: -1;
 }
@@ -39,7 +39,7 @@ header.logo{
 
 header.logo section{
     width: 90%;
-    margin: 0 auto;
+    margin-left: auto;
     position: relative;
     padding: 50px;
 }
@@ -58,8 +58,8 @@ section.box{
 }
 
 section.box .flex-container{
-    width: 90%;
-    margin: 0 auto;
+    width: 93%;
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
 
@@ -78,7 +78,7 @@ section.box .flex-container .container{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-right: 70px;
+    padding-right: 50px;
 }
 
 section.box .flex-container .text{
@@ -121,12 +121,12 @@ section.box .flex-container .text .register button{
 }
 
 footer{
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: center;
     width: 100vw;
     height: auto;
-    bottom: 0px;
     animation-name: animation;
     animation-duration: 2s;
 }
@@ -183,14 +183,54 @@ footer{
     margin-left: 12px
 }
 
-@media screen and (max-width: 1460px){
+@media screen and (max-width: 720px){
+    footer{
+        position: relative;
+        width: 110vw;
+    }
+
+    section.box{
+        width: 110vw;
+    }
+
+    section.box .flex-container{
+        margin: auto;
+        width: 80%;
+    }
+
+    section.box .flex-container .container{
+        padding: 0 !important;
+    }
+
+    section.box .flex-container .container h1{
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    section.box .flex-container .site{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 800px){
 
     body{
         overflow-y: auto;
     }
 
     section.box .flex-container{
-        flex-direction:column-reverse;
+        flex-direction:column;
+    }
+}
+
+@media screen and (max-width: 1320px){
+    section.box .flex-container .container{
+        padding-right: 0px;
+        padding-left: 50px;
+    }
+    .social_icons_rounded{
+        width: 90%;
     }
 }
 

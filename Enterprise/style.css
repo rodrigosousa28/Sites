@@ -259,6 +259,9 @@ footer ul.sponsors li img.s4{
         align-items: center;
         text-transform: capitalize;
     }
+    header nav .logo ul.services li.service{
+        display: flex;
+    }
     header nav .logo ul.services .snap{
         height: 35%;
     }

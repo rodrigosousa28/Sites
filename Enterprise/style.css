@@ -39,7 +39,11 @@ header nav .logo .snap img{
     height: 100%;
 }
 
-header nav .logo ul.services{
+header nav .logo ul.services li{
+    list-style: none;
+}
+
+header nav .logo ul.services li.service{
     display: none;
 }
 

@@ -83,17 +83,17 @@ main section.text h1.title{
     text-align: center;
     font-size: calc(1.7rem + 2vw);
     font-weight: 800;
-    margin: 8vh 0 4vh 0;
+    margin: 2.5vh 0 3vh 0;
 }
 
 main section.text p{
     width: 100%;
     text-align: center;
-    font-size: calc(0.6rem + 2vw);
-    line-height: 1.7rem;
+    font-size: calc(0.5rem + 1.8vw);
+    line-height: 1.3rem;
     font-weight: 500;
     color: hsl(0, 0%, 41%);
-    margin-bottom: 4vh;
+    margin-bottom: 6vh;
 }
 
 main div.button{
@@ -101,7 +101,7 @@ main div.button{
     height: auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
 }
 
 main div.button button{
@@ -116,7 +116,7 @@ main div.button button{
 
 footer{
     width: 100%;
-    margin-bottom: 14vh;
+    margin-bottom: 12vh;
 }
 
 footer ul.sponsors{

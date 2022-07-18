@@ -61,15 +61,24 @@ header nav .mobile-menu-icon buttom img{
 }
 
 main{
+    display: flex;
+    flex-direction: column;
     width: 100vw;
 }
 
-main section.background{
+main section.background-mobile{
     width: 100%;
 }
 
-main section.background img{
+main section.background-mobile img{
     width: 100%;
+}
+
+main section.background-desktop{
+    display: none;
+}
+
+main section.background-desktop img{
     height: auto;
 }
 
@@ -79,6 +88,15 @@ main section.text{
 }
 
 main section.text h1.title{
+    width: 100%;
+    text-align: center;
+    font-size: calc(1.7rem + 2vw);
+    font-weight: 800;
+    margin: 2.5vh 0 3vh 0;
+}
+
+main section.text h1.title-desktop{
+    display: none;
     width: 100%;
     text-align: center;
     font-size: calc(1.7rem + 2vw);
@@ -167,7 +185,7 @@ footer ul.sponsors li img.s4{
 
     main section.text h1.title{
         font-size: calc(2.5rem + 3.5vw);
-        margin: 5vh 0 5vh 0;
+        margin: 4vh 0 5vh 0;
     }
     
     main section.text p{
@@ -210,3 +228,103 @@ footer ul.sponsors li img.s4{
     }
 }
 
+@media screen and (min-width:1100px){
+
+    header{
+        margin-bottom: 8vh;
+    }
+
+    header nav{
+        width: 95%;
+    }
+
+    header nav .logo{
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    header nav .logo ul.services{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        height: 100%;
+        width: 80%;
+    }
+    header nav .logo ul.services li{
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+    }
+    header nav .logo ul.services .snap{
+        height: 35%;
+    }
+    header nav .mobile-menu-icon buttom{
+        display: none;
+    }
+    main{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 80vw;
+        height: 80vh;
+        margin: 0 auto;
+    }
+    main section.background-mobile{
+        display: none;
+    }
+    main section.background-desktop{
+        display: block;
+        height: 75vh;
+        width: 30vw;
+    }
+    main section.background-desktop img{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    main section.text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin-left: 0;
+        transform: translateY(-25%);
+    }
+    main section.text h1.title{
+        display: none;
+    }
+    main section.text h1.title-desktop{
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 2.5vh 0 3vh 0;
+    }
+    main section.text p{
+        width: 100%;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.3rem;
+        font-weight: 500;
+        color: hsl(0, 0%, 41%);
+        margin-bottom: 6vh;
+    }
+    
+    main div.button{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+    
+    main div.button button{
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 15px 23px;
+        border-radius: 14px;
+        color: hsl(0, 0%, 98%);
+        background-color: hsl(0, 0%, 8%);
+        cursor: pointer;
+    }
+}

@@ -6,6 +6,9 @@
     font-family: 'Epilogue', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
 
 header{
     width: 100vw;
@@ -136,12 +139,12 @@ main div.button button{
     cursor: pointer;
 }
 
-footer{
+footer.footer-mobile{
     width: 100%;
     margin-bottom: 12vh;
 }
 
-footer ul.sponsors{
+footer.footer-mobile ul.sponsors{
     width: 90%;
     margin: 0 auto;
     height: 2.5rem;
@@ -151,32 +154,32 @@ footer ul.sponsors{
     justify-content: space-between;
 }
 
-footer ul.sponsors li{
+footer.footer-mobile ul.sponsors li{
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-footer ul.sponsors li img{
+footer.footer-mobile ul.sponsors li img{
     display: block;
 }
 
-footer ul.sponsors li img.s1{
+footer.footer-mobile ul.sponsors li img.s1{
     height: 40%;
     width: 22vw;
 }
 
-footer ul.sponsors li img.s2{
+footer.footer-mobile ul.sponsors li img.s2{
     height: 72%;
     width: 13vw;
 }
 
-footer ul.sponsors li img.s3{
+footer.footer-mobile ul.sponsors li img.s3{
     height: 40%;
     width: 18vw;
 }
 
-footer ul.sponsors li img.s4{
+footer.footer-mobile ul.sponsors li img.s4{
     height: 50%;
     width: 15vw;
 }
@@ -235,7 +238,7 @@ footer ul.sponsors li img.s4{
 @media screen and (min-width:1100px){
 
     header{
-        margin-bottom: 8vh;
+        margin-bottom: 5vh;
     }
 
     header nav{
@@ -252,15 +255,19 @@ footer ul.sponsors li img.s4{
         list-style: none;
         justify-content: space-between;
         height: 100%;
-        width: 80%;
+        width: 85%;
     }
     header nav .logo ul.services li{
         display: flex;
         align-items: center;
-        text-transform: capitalize;
     }
     header nav .logo ul.services li.service{
         display: flex;
+    }
+    header nav .logo ul.services li.service p{
+        display: flex;
+        text-transform: capitalize;
+        cursor: pointer;
     }
     header nav .logo ul.services .snap{
         height: 35%;
@@ -280,8 +287,8 @@ footer ul.sponsors li img.s4{
     }
     main section.background-desktop{
         display: block;
-        height: 75vh;
-        width: 30vw;
+        height: 70vh;
+        width: 25vw;
     }
     main section.background-desktop img{
         display: block;
@@ -294,7 +301,6 @@ footer ul.sponsors li img.s4{
         justify-content: center;
         width: 50%;
         margin-left: 0;
-        transform: translateY(-25%);
     }
     main section.text h1.title{
         display: none;
@@ -303,12 +309,13 @@ footer ul.sponsors li img.s4{
         display: block;
         width: 100%;
         text-align: left;
-        font-size: 3rem;
+        font-size: 4.8rem;
+        line-height: 4rem;
         font-weight: 800;
-        margin: 2.5vh 0 3vh 0;
+        margin: 2.5vh 0 5.5vh 0;
     }
     main section.text p{
-        width: 100%;
+        width: 70%;
         text-align: left;
         font-size: 1rem;
         line-height: 1.3rem;
@@ -318,11 +325,9 @@ footer ul.sponsors li img.s4{
     }
     
     main div.button{
-        width: 100%;
-        height: auto;
         display: flex;
-        justify-content: center;
-        margin-bottom: 0;
+        justify-content: flex-start;
+        margin-bottom: 10vh;
     }
     
     main div.button button{
@@ -333,5 +338,16 @@ footer ul.sponsors li img.s4{
         color: hsl(0, 0%, 98%);
         background-color: hsl(0, 0%, 8%);
         cursor: pointer;
+    }
+    footer.footer-mobile{
+        display: none;
+    }
+    footer.footer-desktop{
+        width: 100%;
+    }
+    footer.footer-desktop ul.sponsors-desktop{
+        display: flex;
+        list-style: none;    
+        justify-content: space-between;
     }
 }

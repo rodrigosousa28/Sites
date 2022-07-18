@@ -6,13 +6,17 @@
     font-family: 'Epilogue', sans-serif;
 }
 
-header{
+body{
     width: 100vw;
+}
+
+header{
+    width: 100%;
     height: auto;
 }
 
 header nav{
-    width: 92vw;
+    width: 92%;
     padding-top: 20px;
     height: 120px;
     margin: 0 auto;
@@ -113,12 +117,12 @@ footer{
 
 footer ul.sponsors{
     width: 90%;
+    margin: 0 auto;
     height: 2.5rem;
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
 }
 
 footer ul.sponsors li{
@@ -134,10 +138,3 @@ footer ul.sponsors li img{
     height: 100%;
 }
 
-@media screen and (min-width: 550px){
-    header nav .logo ul.services{
-        display: flex;
-        align-items: center;
-        list-style: none;
-    }
-}

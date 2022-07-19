@@ -369,10 +369,13 @@ footer.footer-mobile ul.sponsors li img.s4{
     footer.footer-mobile{
         display: none;
     }
-    footer.footer-desktop{
+    main section.text footer.footer-desktop{
+        display: block;
+    }
+    main section.text footer.footer-desktop{
         width: 100%;
     }
-    footer.footer-desktop ul.sponsors-desktop{
+    main section.text footer.footer-desktop ul.sponsors-desktop{
         display: flex;
         list-style: none;    
         justify-content: space-between;

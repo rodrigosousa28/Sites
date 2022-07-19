@@ -50,6 +50,10 @@ header nav .logo ul.services li.service{
     display: none;
 }
 
+header nav ul.login{
+    display: none;
+}
+
 header nav .mobile-menu-icon{
     height: 100%;
 }
@@ -119,6 +123,10 @@ main section.text p{
     font-weight: 500;
     color: hsl(0, 0%, 41%);
     margin-bottom: 6vh;
+}
+
+main section.text footer.footer-desktop{
+    display: none;
 }
 
 main div.button{
@@ -242,7 +250,8 @@ footer.footer-mobile ul.sponsors li img.s4{
     }
 
     header nav{
-        width: 95%;
+        width: 92vw;
+        margin: 0 auto;
     }
 
     header nav .logo{
@@ -271,6 +280,22 @@ footer.footer-mobile ul.sponsors li img.s4{
     }
     header nav .logo ul.services .snap{
         height: 35%;
+    }
+    header nav ul.login{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 12%;
+    }
+    header nav ul.login li{
+        display: flex;
+        align-items: center;
+    }
+    header nav ul.login li button{
+        background-color: #fff;
+        padding: 10px 20px;
+        border: 1px solid black;
+        border-radius: 12px;
     }
     header nav .mobile-menu-icon buttom{
         display: none;

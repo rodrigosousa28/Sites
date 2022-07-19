@@ -7,7 +7,7 @@
 }
 
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header{
@@ -244,6 +244,10 @@ footer.footer-mobile ul.sponsors li img.s4{
 }
 
 @media screen and (min-width:1100px){
+
+    body{
+        overflow: hidden;
+    }
 
     header{
         margin-bottom: 5vh;

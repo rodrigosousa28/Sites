@@ -290,12 +290,14 @@ footer.footer-mobile ul.sponsors li img.s4{
     header nav ul.login li{
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
     header nav ul.login li button{
         background-color: #fff;
         padding: 10px 20px;
         border: 1px solid black;
         border-radius: 12px;
+        cursor: pointer;
     }
     header nav .mobile-menu-icon buttom{
         display: none;

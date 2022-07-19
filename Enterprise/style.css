@@ -282,6 +282,12 @@ footer.footer-mobile ul.sponsors li img.s4{
         text-transform: capitalize;
         cursor: pointer;
     }
+    header nav .logo ul.services li.service p.menu{
+        padding-right: 20px;
+        background-image: url(./images/icon-arrow-down.svg);
+        background-repeat: no-repeat;
+        background-position: 95%;
+    }
     header nav .logo ul.services .snap{
         height: 35%;
     }

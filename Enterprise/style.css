@@ -255,7 +255,7 @@ footer.footer-mobile ul.sponsors li img.s4{
     }
 
     header nav .logo{
-        width: 50%;
+        width: 700px;
         justify-content: space-between;
     }
 
@@ -285,7 +285,7 @@ footer.footer-mobile ul.sponsors li img.s4{
         display: flex;
         list-style: none;
         justify-content: space-between;
-        width: 12%;
+        width: 175px;
     }
     header nav ul.login li{
         display: flex;

@@ -113,6 +113,7 @@ main section.text h1.title-desktop{
     font-size: calc(1.7rem + 2vw);
     font-weight: 800;
     margin: 2.5vh 0 3vh 0;
+    z-index: -1;
 }
 
 main section.text p{
@@ -153,7 +154,7 @@ footer.footer-mobile{
 }
 
 footer.footer-mobile ul.sponsors{
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     height: 2.5rem;
     list-style: none;
@@ -282,9 +283,15 @@ footer.footer-mobile ul.sponsors li img.s4{
         text-transform: capitalize;
         cursor: pointer;
     }
-    header nav .logo ul.services li.service p.menu{
+    header nav .logo ul.services li.service p.menu-closed{
         padding-right: 20px;
         background-image: url(./images/icon-arrow-down.svg);
+        background-repeat: no-repeat;
+        background-position: 95%;
+    }
+    header nav .logo ul.services li.service p.menu-open{
+        padding-right: 20px;
+        background-image: url(./images/icon-arrow-up.svg);
         background-repeat: no-repeat;
         background-position: 95%;
     }
@@ -337,7 +344,7 @@ footer.footer-mobile ul.sponsors li img.s4{
         flex-direction: column;
         justify-content: center;
         width: 50%;
-        margin-left: 0;
+        margin-left: 60px;
     }
     main section.text h1.title{
         display: none;
@@ -389,5 +396,51 @@ footer.footer-mobile ul.sponsors li img.s4{
         display: flex;
         list-style: none;    
         justify-content: space-between;
+    }
+    .dropdown-menu-1{
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        z-index: 1;
+        top: 85px;
+        left: 180px;
+        width: 135px;
+        height: 120px;
+        padding: 20px 0px 20px 0px;
+        box-shadow: 1px 1px 20px 0px #bcbcbc;
+        border-radius: 8px;
+    }
+    .dropdown-menu-2{
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        z-index: 1;
+        top: 85px;
+        left: 370px;
+        width: 120px;
+        height: 80px;
+        padding: 20px 0px;
+        box-shadow: 1px 1px 20px 0px #bcbcbc;
+        border-radius: 8px;
+    }
+    .open{
+        display: flex !important;
+    }
+    .open ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .open ul li{
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .open ul li p{
+        margin-left: 10px;
+        font-size: 0.8rem;
     }
 }

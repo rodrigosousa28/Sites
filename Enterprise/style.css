@@ -243,7 +243,7 @@ main section.text h1.title{
     text-align: center;
     font-size: calc(1.7rem + 2vw);
     font-weight: 800;
-    margin: 2.5vh 0 3vh 0;
+    margin: 5.5vh 0 3vh 0;
 }
 
 main section.text h1.title-desktop{
@@ -275,7 +275,7 @@ main div.button{
     height: auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 8vh;
+    margin-bottom: 6vh;
 }
 
 main div.button button{

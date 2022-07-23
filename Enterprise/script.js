@@ -81,7 +81,7 @@ function show(){
     item.classList.add('mobile-menu-show');
 }
 
-function close(){
+function fechar(){
     const it = document.querySelector('.mobile-menu-show');
     it.classList.remove('mobile-menu-show');
     it.classList.add('mobile-menu-closed');

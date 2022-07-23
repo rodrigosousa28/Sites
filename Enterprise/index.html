@@ -67,7 +67,57 @@
             </div>
             </div>
             <div class="mobile-menu-icon">
-                <buttom onclick="show()"><img class="icon" src="./images/icon-menu.svg"></buttom>
+                <buttom id="op" onclick="show()"><img class="icon" src="./images/icon-menu.svg"></buttom>
+            </div>
+            <div class="mobile-menu-closed">
+                <header class="mobile-menu-open-icon">
+                    <buttom id="x" onclick="close()"><img src="./images/icon-close-menu.svg"></buttom>
+                </header>
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item">
+                        <p onclick="openMenuMob1()" class="menu-closed-mob" id="mc11">Features</p>
+                    </li>
+                    <ul id="menumob1" class="mobile-menu-item-closed">
+                        <li class="mobile-menu-list-open">
+                            <p class="bk1">Todo List</p>
+                        </li>
+                        <li class="mobile-menu-list-open">
+                            <p class="bk2">Calendar</p>
+                        </li>
+                        <li class="mobile-menu-list-open">
+                            <p class="bk3">Reminders</p>
+                        </li>
+                        <li class=" mobile-menu-list-open">
+                            <p class="bk4">Planning</p>
+                        </li>
+                    </ul>
+                    <li class="mobile-menu-item">
+                        <p onclick="openMenuMob2()" class="menu-closed-mob" id="mc12">Company</p>
+                    </li>
+                    <ul id="menumob2" class="mobile-menu-item-closed">
+                        <li class="mobile-menu-list-open">
+                            <p class="bk5">History</p>
+                        </li>
+                        <li class="mobile-menu-list-open">
+                            <p class="bk5">Our Team</p>
+                        </li>
+                        <li class="mobile-menu-list-open">
+                            <p class="bk5">Blog</p>
+                        </li>
+                    </ul>
+                    <li class="mobile-menu-item">Carees</li>
+                    <li class="mobile-menu-item">About</li>
+                </ul>
+                <footer class="social-media">
+                    <ul>
+                        <li>
+                            Login
+                        </li>
+                        <li>
+                            <button>Register</button>
+                        </li>
+                    </ul>
+                </footer>
             </div>
             <ul class="login">
                 <li>

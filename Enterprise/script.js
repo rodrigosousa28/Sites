@@ -34,3 +34,55 @@ function deskmenu2(){
         r.classList.add('menu-closed');
     }
 }
+
+function openMenuMob1(){
+    const z = document.getElementById('mc11');
+    if (z.classList.contains('menu-closed-mob')){
+        z.classList.remove('menu-closed-mob');
+        z.classList.add('menu-open-mob');
+    }else{
+        z.classList.remove('menu-open-mob');
+        z.classList.add('menu-closed-mob');
+    }
+
+    const b = document.getElementById('menumob1');
+    if (b.classList.contains('mobile-menu-item-closed')){
+        b.classList.remove('mobile-menu-item-closed');
+        b.classList.add('mobile-menu-item-open')
+    }else{
+        b.classList.remove('mobile-menu-item-open');
+        b.classList.add('mobile-menu-item-closed')
+    }
+}
+
+function openMenuMob2(){
+    const y = document.getElementById('mc12');
+    if (y.classList.contains('menu-closed-mob')){
+        y.classList.remove('menu-closed-mob');
+        y.classList.add('menu-open-mob');
+    }else{
+        y.classList.remove('menu-open-mob');
+        y.classList.add('menu-closed-mob');
+    }
+
+    const a = document.getElementById('menumob2');
+    if (a.classList.contains('mobile-menu-item-closed')){
+        a.classList.remove('mobile-menu-item-closed');
+        a.classList.add('mobile-menu-item-open')
+    }else{
+        a.classList.remove('mobile-menu-item-open');
+        a.classList.add('mobile-menu-item-closed')
+    }
+}
+
+function show(){
+    const item = document.querySelector('.mobile-menu-closed');
+    item.classList.remove('mobile-menu-closed');
+    item.classList.add('mobile-menu-show');
+}
+
+function close(){
+    const it = document.querySelector('.mobile-menu-show');
+    it.classList.remove('mobile-menu-show');
+    it.classList.add('mobile-menu-closed');
+}

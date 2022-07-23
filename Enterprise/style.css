@@ -6,6 +6,18 @@
     font-family: 'Epilogue', sans-serif;
 }
 
+.dark{
+    display: none;
+}
+
+.dark-show{
+    display: block;
+    position: fixed;
+    background-color: #444343bb;
+    height: 100%;
+    width: 100%;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -83,7 +95,7 @@ header nav .mobile-menu-icon buttom img{
     top: 0;
     bottom: 0;
     right: 0;
-    width: 60vw;
+    width: 58vw;
     background-color: #fff;
     z-index: 2;
 }

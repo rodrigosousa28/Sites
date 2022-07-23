@@ -79,10 +79,18 @@ function show(){
     const item = document.querySelector('.mobile-menu-closed');
     item.classList.remove('mobile-menu-closed');
     item.classList.add('mobile-menu-show');
+    
+    const back = document.querySelector('.dark');
+    back.classList.remove('dark');
+    back.classList.add('dark-show');
 }
 
 function fechar(){
     const it = document.querySelector('.mobile-menu-show');
     it.classList.remove('mobile-menu-show');
     it.classList.add('mobile-menu-closed');
+
+    const backg = document.querySelector('.dark-show');
+    backg.classList.remove('dark-show');
+    backg.classList.add('dark');
 }

@@ -20,7 +20,7 @@
                         <div class="snap"><img src="./images/logo.svg" alt="" srcset="">
                     </li>
                     <li class="service drop">
-                        <p onclick="deskmenu1()" id="mc1" class="menu-closed">features
+                        <p id="mc1" class="menu-closed" onclick="deskmenu('mc1', '.dropdown-menu-1')">features
                         </p>
                         <div class="dropdown-menu-1">
                             <ul>
@@ -44,7 +44,7 @@
                         </div>
                     </li>
                     <li class="service drop">
-                        <p onclick="deskmenu2()" id="mc2" class="menu-closed">company</p>
+                        <p onclick="deskmenu('mc2', '.dropdown-menu-2')" id="mc2" class="menu-closed">company</p>
                         <div class="dropdown-menu-2">
                             <ul>
                                 <li>
@@ -78,7 +78,7 @@
                 </header>
                 <ul class="mobile-menu-list">
                     <li class="mobile-menu-item">
-                        <p onclick="openMenuMob1()" class="menu-closed-mob" id="mc11">Features</p>
+                        <p onclick="openMenuMob('mc11', 'menumob1')" class="menu-closed-mob" id="mc11">Features</p>
                     </li>
                     <ul id="menumob1" class="mobile-menu-item-closed">
                         <li class="mobile-menu-list-open">
@@ -95,7 +95,7 @@
                         </li>
                     </ul>
                     <li class="mobile-menu-item">
-                        <p onclick="openMenuMob2()" class="menu-closed-mob" id="mc12">Company</p>
+                        <p onclick="openMenuMob('mc12', 'menumob2')" class="menu-closed-mob" id="mc12">Company</p>
                     </li>
                     <ul id="menumob2" class="mobile-menu-item-closed">
                         <li class="mobile-menu-list-open">

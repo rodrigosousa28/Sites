@@ -10,18 +10,23 @@
 
 <body>
 
+    <!--Essa div só é ativada quando o menu do celular está aberto-->
     <div class="dark">
     </div>
+    <!--Serve para deixar o resto do site mais escurecido e deixar o menu em destaque-->
     <header>
         <nav>
+            <!--Essa div contém Todos os itens de snap até About-->
             <div class="logo">
                 <ul class="services">
                     <li>
                         <div class="snap"><img src="./images/logo.svg" alt="" srcset="">
                     </li>
+                    <!--Os elementos com class service drop indicam que há um dropdown menu a ser exibido se clicarmos nela-->
                     <li class="service drop">
                         <p id="mc1" class="menu-closed" onclick="deskmenu('mc1', '.dropdown-menu-1')">features
                         </p>
+                        <!--Só aparece se clicar no Features-->
                         <div class="dropdown-menu-1">
                             <ul>
                                 <li class="item1">
@@ -42,9 +47,11 @@
                                 </li>
                             </ul>
                         </div>
+                        <!--Só aparece se clicar no Features-->
                     </li>
                     <li class="service drop">
                         <p onclick="deskmenu('mc2', '.dropdown-menu-2')" id="mc2" class="menu-closed">company</p>
+                        <!--Só aparece se clicar no Company-->
                         <div class="dropdown-menu-2">
                             <ul>
                                 <li>
@@ -58,6 +65,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <!--Só aparece se clicar no Company-->
                     </li>
                     <li class="service">
                         <p>carees</p>
@@ -67,7 +75,7 @@
                     </li>
                 </ul>
             </div>
-            </div>
+            <!--Fim da Div do Spap-About versão desktop-->
             <div class="mobile-menu-icon">
                 <buttom style="cursor: pointer;" onclick="show()"><img src="./images/icon-menu.svg"></buttom>
             </div>

@@ -122,6 +122,7 @@ footer .rate ul li .star{
 .social-proof ul li p{
     line-height: 1.35rem;
     font-size: 0.8rem;
+    opacity: 0.9;
 }
 
 @media screen and (min-width: 700px){
@@ -178,6 +179,13 @@ footer .rate ul li .star{
     .social-proof ul li{
         width: 32%;
     }
+    .social-proof ul li header{
+        width: 55%;
+        margin-bottom: 25px;
+    }
+    .social-proof ul li p{
+        font-size: 0.9rem;
+    }
     .social-proof ul li.p1{
         transform: translateY(5%);
     }
@@ -186,5 +194,19 @@ footer .rate ul li .star{
     }
     .social-proof ul li.p3{
         transform: translateY(25%);
+    }
+    .social-proof ul li header img{
+        height: 40px;
+    }
+    .social-proof ul li header .title{
+        line-height: 1.3rem;
+    }
+    .social-proof ul li header .title h3{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    
+    .social-proof ul li header .title h4{
+        font-size: 1rem;
     }
 }

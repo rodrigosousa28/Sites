@@ -14,17 +14,22 @@ body{
 
 footer{
     padding: 60px 20px 20px 20px;
-    width: 100vw;
+    width: 100%;
+}
+
+footer .flex-container{
+    display: flex;
+    flex-direction: column;
 }
 
 footer .text{
     text-align: center;
-    color: hsl(300, 43%, 22%);
 }
 
 footer .text h1{
     margin-bottom: 4.5vh;
     font-weight: 700;
+    color: hsl(300, 43%, 22%);
 }
 
 footer .text p{
@@ -32,6 +37,7 @@ footer .text p{
     font-size: 0.95rem;
     padding: 0px 5vw;
     margin-bottom: 4.5vh;
+    color: hsl(303, 10%, 53%);
 }
 
 footer .rate{
@@ -116,4 +122,69 @@ footer .rate ul li .star{
 .social-proof ul li p{
     line-height: 1.35rem;
     font-size: 0.8rem;
+}
+
+@media screen and (min-width: 700px){
+    footer{
+        padding: 100px 120px 20px 150px;
+    }
+    footer .flex-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .text{
+        text-align: left;
+        width: 40%;
+    }
+    footer .text h1{
+        font-size: 3.75rem;
+        margin-bottom: 5vh;
+    }
+    footer .text p{
+        font-size: 1.2rem;
+        padding: 0 2vw 0 0;
+    }
+    footer .rate{
+        display: flex;
+        width: 50%;
+        margin-bottom: 0;
+    }
+    footer .rate ul{
+        width: 100%;
+        justify-content: center;
+    }
+    footer .rate ul li{
+        flex-direction: row;
+        padding: 15px 25px;
+        width: 60%;
+        font-size: 0.95rem;
+    }
+    footer .rate ul li .star{
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+    footer .rate ul li.s1{
+        transform: translateX(-20%);
+    }
+    footer .rate ul li.s2{
+        transform: translateX(-10%);
+    }
+    .social-proof ul{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .social-proof ul li{
+        width: 32%;
+    }
+    .social-proof ul li.p1{
+        transform: translateY(5%);
+    }
+    .social-proof ul li.p2{
+        transform: translateY(15%);
+    }
+    .social-proof ul li.p3{
+        transform: translateY(25%);
+    }
 }

@@ -148,7 +148,7 @@ footer .rate ul li .star{
     }
     footer .rate{
         display: flex;
-        width: 50%;
+        min-width: 700px;
         margin-bottom: 0;
     }
     footer .rate ul{

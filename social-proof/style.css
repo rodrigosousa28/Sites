@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body{
+    font-size: 15px;
+}
+
+
+footer{
+    padding: 60px 20px 20px 20px;
+    width: 100vw;
+}
+
+footer .text{
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+}
+
+footer .text h1{
+    margin-bottom: 4.5vh;
+    font-weight: 700;
+}
+
+footer .text p{
+    line-height: 1.35rem;
+    font-size: 0.95rem;
+    padding: 0px 5vw;
+    margin-bottom: 4.5vh;
+}
+
+footer .rate{
+    display: block;
+    margin-bottom: 4.5vh;
+}
+
+footer .rate ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+footer .rate ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+    color: hsl(300, 43%, 22%);
+    font-size: 0.75rem;
+    font-weight: bolder;
+}
+
+footer .rate ul li .star{
+    margin-bottom: 8px;
+}
+
+.social-proof{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.social-proof ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+}
+
+.social-proof ul li{
+    background-color: hsl(300, 43%, 22%);
+    margin-bottom: 10px;
+    padding: 30px;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+}
+
+.social-proof ul li header{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.social-proof ul li header .title{
+    line-height: 1rem;
+}
+
+.social-proof ul li header .title h3{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.social-proof ul li header .title h4{
+    color: hsl(333, 80%, 67%);
+    opacity: 0.7;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.social-proof ul li header img{
+    border-radius: 50%;
+    height: 30px;
+}
+
+.social-proof ul li p{
+    line-height: 1.35rem;
+    font-size: 0.8rem;
+}
